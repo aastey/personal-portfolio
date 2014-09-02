@@ -9,20 +9,71 @@
       <div class='container-fluid main-background'>
         <div class='container background-image'>
           <h1>my name is amanda<br /> and i build websites</h1>
+          <div class='social-icon-container'>
+            <a class='mail' href='#'></a>
+            <a class='linked' href='#'></a>
+            <a class='facebook' href='#'></a>
+          </div>
         </div>
       </div>
-      <nav class='navbar' role='navigation'>
+      <div class='scroll-top' data-spy='affix'></div>
+      <nav class='navbar' data-spy='affix' id='navigation'>
         <div class='navbar-inner'>
           <ul class='nav navbar-nav'>
-            <li class='active'>about</li>
-            <li>work</li>
-            <li>resume</li>
+            <li>
+              <a class='active' href='#about'>about</a>
+            </li>
+            <li>
+              <a href='#work'>work</a>
+            </li>
+            <li>
+              <a href='#resume'>resume</a>
+            </li>
           </ul>
         </div>
       </nav>
-      <div class='container-fluid about-section'></div>
+      <div class='container-fluid about-section' id='about'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-lg-2 col-md-2 col-sm-12'>
+              <div class='thumbnail amanda-image'></div>
+            </div>
+            <div class='col-lg-3 col-md-3 col-sm-12'>
+              <h2>the basics</h2>
+              <ul class='bio-summary'>
+                <li>Developer for USA Today since 2011.</li>
+                <li>Co-founder, lead front end designer and developer for Flashband.</li>
+                <li>Graduated Summa Cum Laude from Syracuse University in 2007.</li>
+                <li>Received a certificate in Web Development and Design from the Center of Digital Imaging Arts at Boston University in 2009.</li>
+              </ul>
+            </div>
+            <div class='col-lg-6 col-md-5 col-sm-12'>
+              <h2>the details</h2>
+              <p>I am a sucker for clean, functional websites. I love bright colors and anything with a playful feel.</p>
+              <p>In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.</p>
+              <p>In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.</p>
+              <p>Feel free to contact me at amanda.astey@gmail.com!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='container-fluid work-section' id='work'>
+        <div class='container'>
+          <div class='row'>
+            <h2>work</h2>
+          </div>
+        </div>
+      </div>
+      <div class='container-fluid resume-section' id='resume'>
+        <div class='container'>
+          <div class='row'>
+            <h2>portfolio</h2>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script src='js/lib/jquery.min.js'></script>
+  <script src='js/lib/bootstrap.js'></script>
   <script src='js/main.js'></script>
 </html>

@@ -1,0 +1,11 @@
+@media all and (max-width: 767px) {
+    .container.background-image {
+        background-image: none;
+        min-height: 250px;
+    }
+	.about-section {
+		.amanda-image {
+			display: none;
+		}
+	}
+} 
