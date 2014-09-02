@@ -1,0 +1,19 @@
+%html{lang: 'en'}
+    %head
+        %meta{'http-equiv' => 'Content-Type', :content => 'text/html'}/
+        %title Amanda Astey Portfolio
+        %link{:rel => :stylesheet, :type => :"text/css", :href => "css/outlook-style.css"} 
+    %body
+        #portfolioApp
+            .container-fluid.main-background
+                .container.background-image
+                    %h1 my name is amanda<br /> and i build websites
+            %nav.navbar{role: "navigation"}
+                .navbar-inner
+                    %ul.nav.navbar-nav
+                        %li.active about
+                        %li work
+                        %li resume
+            .container-fluid.about-section
+    %script(src="js/lib/jquery.min.js")
+    %script(src="js/main.js")
