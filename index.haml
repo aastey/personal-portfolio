@@ -16,16 +16,22 @@
             %a.facebook{:href => '#'} 
               %img(src="img/social-facebook.png")
       .scroll-top( data-spy="affix")
-      %nav#navigation.navbar( data-spy="affix")
-        .navbar-inner
-          %ul.nav.navbar-nav
-            %li
-              %a.nav-link.first.active{:href => '#about'} about
-            %li
-              %a.nav-link{:href => '#work'} work
-            %li
-              %a.nav-link{:href => '#resume'} resume
-      #about.coniner-fluid.about-section
+      %nav.navbar.navbar-default( data-spy="affix")
+        .container-fluid
+          %button.navbar-toggle.collapsed{:data => {:toggle => "collapse", :target => "#bs-example-navbar-collapse-1"}} 
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          .collapse.navbar-collapse#bs-example-navbar-collapse-1
+            %ul.nav.navbar-nav
+              %li
+                %a.nav-link.first.active{:href => '#about'} about
+              %li
+                %a.nav-link{:href => '#work'} work
+              %li
+                %a.nav-link{:href => '#resume'} resume
+      #about.container-fluid.about-section
         .container
           .row
             .col-lg-2.col-md-2.col-sm-12
@@ -50,18 +56,54 @@
               %h2 work
           .row
             .col-lg-3.col-md-3.col-sm-12
-              .img-thumbnail.portfolio-square
+              .img-thumbnail.portfolio-square.flashband
             .col-lg-2.col-md-2.col-sm-12
+              %h4 Flashband
+              %p 
+                %a.website-link{:href => 'http://www.flashband.org'} Flashband Website
+              %p Here is a description of Flashband. 
+              %p
+                %a{:href => '#'} View it on Github!
             .col-lg-3.col-md-3.col-sm-12
-              .img-thumbnail.portfolio-square
+              .img-thumbnail.portfolio-square.elections
             .col-lg-2.col-md-2.col-sm-12
+              %h4 Elections Forecast
+              %p 
+                %a.website-link{:href => 'http://www.usatoday.com/pages/interactives/elections-forecast-2014/'} Elections App
+              %p Here is a description of the elections forecast. 
           .row
             .col-lg-3.col-md-3.col-sm-12
-              .img-thumbnail.portfolio-square
+              .img-thumbnail.portfolio-square.ghost
             .col-lg-2.col-md-2.col-sm-12
+              %h4 Ghost Factories
+              %p 
+                %a.website-link{:href => 'http://usatoday30.usatoday.com/news/nation/smelting-lead-contamination'} Ghost Factories App
+              %p Here is a description of the elections forecast. 
             .col-lg-3.col-md-3.col-sm-12
-              .img-thumbnail.portfolio-square
+              .img-thumbnail.portfolio-square.ccc
             .col-lg-2.col-md-2.col-sm-12
+              %h4 College and Career Connections
+              %p 
+                %a.website-link.unactive{:href => '#'} Website no longer active
+              %p Here is a description of the elections forecast. 
+            .col-lg-3.col-md-3.col-sm-12
+              .img-thumbnail.portfolio-square.template
+            .col-lg-2.col-md-2.col-sm-12
+              %h4 Article Templates
+              %p 
+                %a.website-link{:href => 'http://www.flashband.org'} www.flashband.org
+              %p Here is a description of the elections forecast. 
+              %p
+                %a{:href => '#'} View it on Github!
+            .col-lg-3.col-md-3.col-sm-12
+              .img-thumbnail.portfolio-square.this
+            .col-lg-2.col-md-2.col-sm-12
+              %h4 This Website
+              %p 
+                %a.website-link{:href => 'http://www.flashband.org'} www.flashband.org
+              %p Here is a description of the elections forecast. 
+              %p
+                %a{:href => '#'} View it on Github!
       #resume.container-fluid.resume-section
         .container
           .row

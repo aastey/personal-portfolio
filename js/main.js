@@ -1,12 +1,12 @@
-$('#navigation').affix({
+$('.navbar').affix({
       offset: {
-        top: $('.main-background').height()-$('#navigation').height()
+        top: $('.main-background').height()-$('.navbar-default').height()
       }
 }); 
 
 $('.scroll-top').affix({
       offset: {
-        top: $('.main-background').height()-$('#navigation').height()
+        top: $('.main-background').height()-$('.navbar-default').height()
       }
 }); 
 
