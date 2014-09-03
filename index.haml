@@ -17,7 +17,7 @@
               %img(src="img/social-facebook.png")
       .scroll-top( data-spy="affix")
       %nav.navbar.navbar-default( data-spy="affix")
-        .container-fluid
+        .navbar-inner
           %button.navbar-toggle.collapsed{:data => {:toggle => "collapse", :target => "#bs-example-navbar-collapse-1"}} 
             %span.sr-only Toggle navigation
             %span.icon-bar
@@ -31,7 +31,7 @@
                 %a.nav-link{:href => '#work'} work
               %li
                 %a.nav-link{:href => '#resume'} resume
-      #about.container-fluid.about-section
+      %section#about.container-fluid.about-section{:data => {:speed => "4", :type => "background"}} 
         .container
           .row
             .col-lg-2.col-md-2.col-sm-12
@@ -49,7 +49,7 @@
               %p In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.
               %p In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.
               %p Feel free to contact me at amanda.astey@gmail.com!
-      #work.container-fluid.work-section
+      %section#work.container-fluid.work-section{:data => {:speed => "1", :type => "background"}} 
         .container
           .row
             .col-lg-12.col-md-12.col-sm-12
@@ -65,7 +65,7 @@
               %p
                 %a{:href => '#'} View it on Github!
             .col-lg-3.col-md-3.col-sm-12
-              .img-thumbnail.portfolio-square.elections
+              %a.img-thumbnail.portfolio-square.elections{:href => '/elections.haml'}
             .col-lg-2.col-md-2.col-sm-12
               %h4 Elections Forecast
               %p 
@@ -104,14 +104,14 @@
               %p Here is a description of the elections forecast. 
               %p
                 %a{:href => '#'} View it on Github!
-      #resume.container-fluid.resume-section
+      %section#resume.container-fluid.resume-section{:data => {:speed => "2", :type => "background"}} 
         .container
           .row
             .col-lg-12.col-md-12.col-sm-12
               %h2 resume
               %h5 download a pdf version <a href="">here</a>.
           .row
-            .col-lg-3.col-md-3.col-sm-12
+            .col-lg-4.col-md-4.col-sm-12
               %h4 education
               %h5 Center for Digital Imaging Arts at Boston University
               %p Certification in Graphic/Web Design
@@ -136,7 +136,7 @@
               %p Adobe Flash
               %p ActionScript
               %h4 honors
-            .col-lg-8.col-md-8.col-sm-12
+            .col-lg-7.col-md-7.col-sm-12
               %h4 experience
               %h5 USA Today, McLean VA
               %p Web Developer - August 2011 - present
