@@ -1,53 +1,137 @@
 %html{lang: 'en'}
-    %head
-        %meta{'http-equiv' => 'Content-Type', :content => 'text/html'}/
-        %title Amanda Astey Portfolio
-        %link{:rel => :stylesheet, :type => :"text/css", :href => "css/outlook-style.css"} 
-    %body
-        #portfolioApp
-            .container-fluid.main-background
-                .container.background-image
-                    %h1 my name is amanda<br /> and i build websites
-                    .social-icon-container
-                        %a.mail{:href => '#'} 
-                        %a.linked{:href => '#'} 
-                        %a.facebook{:href => '#'} 
-            .scroll-top( data-spy="affix")
-            %nav#navigation.navbar( data-spy="affix")
-                .navbar-inner
-                    %ul.nav.navbar-nav
-                        %li
-                            %a.active{:href => '#about'} about
-                        %li
-                            %a{:href => '#work'} work
-                        %li
-                            %a{:href => '#resume'} resume
-            #about.container-fluid.about-section
-                .container
-                    .row
-                        .col-lg-2.col-md-2.col-sm-12
-                            .thumbnail.amanda-image
-                        .col-lg-3.col-md-3.col-sm-12
-                            %h2 the basics
-                            %ul.bio-summary
-                                %li Developer for USA Today since 2011.
-                                %li Co-founder, lead front end designer and developer for Flashband.
-                                %li Graduated Summa Cum Laude from Syracuse University in 2007.
-                                %li Received a certificate in Web Development and Design from the Center of Digital Imaging Arts at Boston University in 2009. 
-                        .col-lg-6.col-md-5.col-sm-12
-                            %h2 the details
-                            %p I am a sucker for clean, functional websites. I love bright colors and anything with a playful feel.
-                            %p In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.
-                            %p In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.
-                            %p Feel free to contact me at amanda.astey@gmail.com!
-            #work.container-fluid.work-section
-                .container
-                    .row
-                        %h2 work
-            #resume.container-fluid.resume-section
-                .container
-                    .row
-                        %h2 portfolio
-    %script(src="js/lib/jquery.min.js")
-    %script(src="js/lib/bootstrap.js")
-    %script(src="js/main.js")
+  %head
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html'}/
+    %title Amanda Astey Portfolio
+    %link{:rel => :stylesheet, :type => :"text/css", :href => "css/outlook-style.css"} 
+  %body
+    #portfolioApp
+      .container-fluid.main-background
+        .container.background-image
+          %h1 my name is amanda<br /> and i build websites
+          .social-icon-container
+            %a.mail{:href => '#'} 
+              %img(src="img/social-mail.png")
+            %a.linked{:href => '#'} 
+              %img(src="img/social-linked.png")
+            %a.facebook{:href => '#'} 
+              %img(src="img/social-facebook.png")
+      .scroll-top( data-spy="affix")
+      %nav#navigation.navbar( data-spy="affix")
+        .navbar-inner
+          %ul.nav.navbar-nav
+            %li
+              %a.nav-link.first.active{:href => '#about'} about
+            %li
+              %a.nav-link{:href => '#work'} work
+            %li
+              %a.nav-link{:href => '#resume'} resume
+      #about.coniner-fluid.about-section
+        .container
+          .row
+            .col-lg-2.col-md-2.col-sm-12
+              .img-thumbnail.amanda-image
+            .col-lg-3.col-md-3.col-sm-12
+              %h2 the basics
+              %ul.bio-summary
+                %li Developer for USA Today since 2011.
+                %li Co-founder, lead front end designer and developer for Flashband.
+                %li Graduated Summa Cum Laude from Syracuse University in 2007.
+                %li Received a certificate in Web Development and Design from the Center of Digital Imaging Arts at Boston University in 2009. 
+            .col-lg-6.col-md-5.col-sm-12
+              %h2 the details
+              %p I am a sucker for clean, functional websites. I love bright colors and anything with a playful feel.
+              %p In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.
+              %p In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.
+              %p Feel free to contact me at amanda.astey@gmail.com!
+      #work.container-fluid.work-section
+        .container
+          .row
+            .col-lg-12.col-md-12.col-sm-12
+              %h2 work
+          .row
+            .col-lg-3.col-md-3.col-sm-12
+              .img-thumbnail.portfolio-square
+            .col-lg-2.col-md-2.col-sm-12
+            .col-lg-3.col-md-3.col-sm-12
+              .img-thumbnail.portfolio-square
+            .col-lg-2.col-md-2.col-sm-12
+          .row
+            .col-lg-3.col-md-3.col-sm-12
+              .img-thumbnail.portfolio-square
+            .col-lg-2.col-md-2.col-sm-12
+            .col-lg-3.col-md-3.col-sm-12
+              .img-thumbnail.portfolio-square
+            .col-lg-2.col-md-2.col-sm-12
+      #resume.container-fluid.resume-section
+        .container
+          .row
+            .col-lg-12.col-md-12.col-sm-12
+              %h2 resume
+              %h5 download a pdf version <a href="">here</a>.
+          .row
+            .col-lg-3.col-md-3.col-sm-12
+              %h4 education
+              %h5 Center for Digital Imaging Arts at Boston University
+              %p Certification in Graphic/Web Design
+              %p Graduated May, 2009
+              %h5 Syracuse University S.I. Newhouse School of Public Communications
+              %p Dual B.A. in Advertising and Sociology
+              %p Summa Cum Laude
+              %p Graduated May, 2007
+              %h4 skills
+              %h5 Proficient:
+              %p HTML / CSS (including HTML5 / CSS3)
+              %p JavaScript
+              %p Adobe InDesign
+              %p Adobe Dreamweaver
+              %p Adobe Photoshop
+              %p Adobe Illustrator
+              %p Wordpress
+              %h5 Working Knowledge:
+              %p Python
+              %p Django
+              %p Groovy on Grails
+              %p Adobe Flash
+              %p ActionScript
+              %h4 honors
+            .col-lg-8.col-md-8.col-sm-12
+              %h4 experience
+              %h5 USA Today, McLean VA
+              %p Web Developer - August 2011 - present
+              %ul 
+                %li Collaborated with the entire USA Today development team to completely re-launch the USA Today relaunch.
+                %li Work with lead developers to integrate front end style with back end functionality.
+              %h5 The Flashband Project, Arlington VA
+              %p Cofounder / Lead Front End Designer/Developer - June 2012 - present
+              %ul 
+                %li Create entire layout and organization of site from wireframes to execution.
+                %li Work with lead developer to integrate front end style with back end functionality.
+                %li Maintain site operation and appearance across several browsers.
+              %h5 American Institutes for Research, Washington DC
+              %p Assistant Web Designer - February 2009 - August 2011
+              %ul 
+                %li Manage design and code changes to various websites and online applications.
+                %li Design the structure and appearance for new online tools for teachers and students.
+                %li Illustrate covers for User Guides and AIR internal pamphlets.
+              %h5 Center for Digital Imaging Arts at Boston University, Washington DC
+              %p Web Design Teaching Assistant - June 2009 - December, 2009
+              %ul 
+                %li Advise and mentor students as they prepare to enter the job market.
+                %li Critique student work and answer questions.
+                %li Teach classes on Photoshop.
+              %h5 Brunner Digital, Washington DC
+              %p Web Design Intern - May 2009 - December 2009
+              %ul
+                %li Designed websites and facebook fan pages for clients.
+                %li Assisted in production of print ads and brochure layouts.
+                %li Developed and executed alternate reality game to promote a local concert.
+              %h5 Rydex Investments, Rockville MD
+              %p Sales Coordinator – February 2008 – September 2008
+              %ul
+                %li Provided administrative support to sales team.
+                %li Created marketing materials.
+                %li Organized and supervised events within the company.
+
+  %script(src="js/lib/jquery.min.js")
+  %script(src="js/lib/bootstrap.js")
+  %script(src="js/main.js")
