@@ -7,24 +7,68 @@
   <body>
     <div id='portfolioApp'>
       <div class='container-fluid main-background'>
-        <div class='container background-image'>
-          <h1>my name is amanda<br /> and i build websites</h1>
-          <div class='social-icon-container'>
-            <a class='mail' href='#'>
-              <img src='img/social-mail.png'>
-            </a>
-            <a class='linked' href='#'>
-              <img src='img/social-linked.png'>
-            </a>
-            <a class='facebook' href='#'>
-              <img src='img/social-facebook.png'>
-            </a>
+        <div class='row'>
+          <div class='container'>
+            <div class='carousel slide' data-interval='false' data-ride='carousel' id='homeCarousel'>
+              <h3>quickly browse a few of my favorite projects:</h3>
+              <ol class='carousel-indicators'>
+                <li class='active' data-slide-to='0' data-target='#homeCarousel'></li>
+                <li data-slide-to='1' data-target='#homeCarousel'></li>
+                <li data-slide-to='2' data-target='#homeCarousel'></li>
+                <li data-slide-to='3' data-target='#homeCarousel'></li>
+              </ol>
+              <div class='carousel-inner'>
+                <div class='carousel-item item active background-1'>
+                  <div class='carousel-caption fade-in-slow'>
+                    <h1>my name is amanda <br /> and I build websites</h1>
+                    <div class='social-icon-container'>
+                      <a class='mail toolhover' data-placement='top' data-toggle='tooltip' href='#' title='Email Me'>
+                        <img class='social-img' src='img/social-mail.png'>
+                      </a>
+                      <a class='linked toolhover' data-placement='top' data-toggle='tooltip' href='#' title='LinkedIn Profile'>
+                        <img class='social-img' src='img/social-linked.png'>
+                      </a>
+                      <a class='github last toolhover' data-placement='top' data-toggle='tooltip' href='#' title='View me on GitHub'>
+                        <img class='social-img' src='img/social-github.png'>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class='carousel-item item background-2'>
+                  <div class='carousel-caption fade-in-slow'>
+                    <h1>flashband</h1>
+                    <p>Flashband is an organization that helps musicians meet, network and play music. In addition to being a co-founder of the project, I am also its lead designer and front-end developer.</p>
+                    <p>Since its inception in 2012, Flashband has grown from a few friends using google docs to organize jam sessions to a fully fledged social-media platform. The website helps musicians find and communicate with others in addition to helping them participate in our popular "Showcases" throughout the city.</p>
+                    <a href='#'>view it here</a>
+                  </div>
+                </div>
+                <div class='carousel-item item background-3'>
+                  <div class='carousel-caption fade-in-slow'>
+                    <h1>diversity map</h1>
+                    <p>The USA TODAY "diversity index" was creating using Census data to calculate the chance that two random people in area are different by race or ethnicity. The scale ranges from 0-100 and has been calculated for counties across the US every year since 1960.</p>
+                    <p>The diversity map illustrates the data both by location and chonology</p>
+                    <p>This was my first project utilizing the d3.js library. I was the sole developer on this project.</p>
+                    <a href='#'>view it here</a>
+                  </div>
+                </div>
+                <div class='carousel-item item background-3'>
+                  <div class='carousel-caption fade-in-slow'>
+                    <h1>election forecast and results</h1>
+                    <p>The USA TODAY "diversity index" was creating using Census data to calculate the chance that two random people in area are different by race or ethnicity. The scale ranges from 0-100 and has been calculated for counties across the US every year since 1960.</p>
+                    <p>The diversity map illustrates the data both by location and chonology</p>
+                    <p>This was my first project utilizing the d3.js library. I was the sole developer on this project.</p>
+                    <a href='#'>view forecast</a>
+                    <a href='#'>view results</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class='scroll-top' data-spy='affix'></div>
       <nav class='navbar navbar-default' data-spy='affix'>
-        <div class='container-fluid'>
+        <div class='navbar-inner'>
           <button class='navbar-toggle collapsed' data-target='#bs-example-navbar-collapse-1' data-toggle='collapse'>
             <span class='sr-only'>Toggle navigation</span>
             <span class='icon-bar'></span>
@@ -46,9 +90,9 @@
           </div>
         </div>
       </nav>
-      <div class='container-fluid about-section' id='about'>
+      <section class='container-fluid about-section' data-speed='4' data-type='background' id='about'>
         <div class='container'>
-          <div class='row'>
+          <div class='row fade-in'>
             <div class='col-lg-2 col-md-2 col-sm-12'>
               <div class='img-thumbnail amanda-image'></div>
             </div>
@@ -62,16 +106,18 @@
               </ul>
             </div>
             <div class='col-lg-6 col-md-5 col-sm-12'>
-              <h2>the details</h2>
-              <p>I am a sucker for clean, functional websites. I love bright colors and anything with a playful feel.</p>
-              <p>In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.</p>
-              <p>In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.</p>
-              <p>Feel free to contact me at amanda.astey@gmail.com!</p>
+              <div class='white-tilted-container fade-in'>
+                <h2>the details</h2>
+                <p>I am a sucker for clean, functional websites. I love bright colors and anything with a playful feel.</p>
+                <p>In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.</p>
+                <p>In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.</p>
+                <p>Feel free to contact me at amanda.astey@gmail.com!</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class='container-fluid work-section' id='work'>
+      </section>
+      <section class='container-fluid work-section' data-speed='1' data-type='background' id='work'>
         <div class='container'>
           <div class='row'>
             <div class='col-lg-12 col-md-12 col-sm-12'>
@@ -93,7 +139,7 @@
               </p>
             </div>
             <div class='col-lg-3 col-md-3 col-sm-12'>
-              <div class='img-thumbnail portfolio-square elections'></div>
+              <a class='img-thumbnail portfolio-square elections' href='/elections.haml'></a>
             </div>
             <div class='col-lg-2 col-md-2 col-sm-12'>
               <h4>Elections Forecast</h4>
@@ -152,8 +198,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class='container-fluid resume-section' id='resume'>
+      </section>
+      <section class='container-fluid resume-section' data-speed='2' data-type='background' id='resume'>
         <div class='container'>
           <div class='row'>
             <div class='col-lg-12 col-md-12 col-sm-12'>
@@ -162,7 +208,7 @@
             </div>
           </div>
           <div class='row'>
-            <div class='col-lg-3 col-md-3 col-sm-12'>
+            <div class='col-lg-4 col-md-4 col-sm-12'>
               <h4>education</h4>
               <h5>Center for Digital Imaging Arts at Boston University</h5>
               <p>Certification in Graphic/Web Design</p>
@@ -188,7 +234,7 @@
               <p>ActionScript</p>
               <h4>honors</h4>
             </div>
-            <div class='col-lg-8 col-md-8 col-sm-12'>
+            <div class='col-lg-7 col-md-7 col-sm-12'>
               <h4>experience</h4>
               <h5>USA Today, McLean VA</h5>
               <p>Web Developer - August 2011 - present</p>
@@ -234,7 +280,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </body>
   <script src='js/lib/jquery.min.js'></script>

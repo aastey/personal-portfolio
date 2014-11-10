@@ -5,20 +5,6 @@ $primary-dark: #b13e34;
 $primary-accent: #6f9fc4;
 
 
-@keyframes affixFadeIn
-{
-from {opacity: 0;}
-to {opacity: 1;}
-}
-
-@-webkit-keyframes affixFadeIn 
-{
-from {opacity: 0;}
-to {opacity: 1;}
-}
-
-
-
 @font-face{
     font-family: steel;
     src: url('../fonts/steelfish.ttf');
@@ -35,37 +21,93 @@ a {
 .main-background {
 	background-color: black;
 }
-.container.background-image {
-	background-image: url("../img/main-background.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	min-height: 500px;
-	h1{
+
+.carousel {
+	h3 {
+		float: left;
 		color: white;
+		position: absolute;
+		bottom: 50px;
 		font-family: steel;
-		margin-top: 20%;
-		margin-bottom: 30px;
+		z-index: 1000;
+		text-transform: lowercase;
+		font-size: 140%;
 		letter-spacing: 1px;
-		line-height: 43px;
-		width: 100%;
-		float: left;
 	}
-	.social-icon-container {
-		float: left;
-		width: 100%;
-		a {
-			width: 30px;
-			height: 30px;
-			float: left; 
-			margin: 0 10px 0 0; 
-			opacity: .4;
-			background-color: $primary-light;
-			border: 1px solid $primary-dark;
-		}
-		a:hover {
-			opacity: .8;
-		}
+	.carousel-item{
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 500px;
 	}
+	.carousel-indicators {
+		position: absolute;
+		bottom: 22;
+		left: 0;
+		z-index: 15;
+		width: 100%;
+		padding-left: 0;
+		text-align: left;
+		list-style: none;
+	}
+	.carousel-inner {
+		.item {
+			-webkit-transition: 1s ease-in-out left;
+		    -moz-transition: 1s ease-in-out left;
+		    -o-transition: 1s ease-in-out left;
+		    transition: 1s ease-in-out left;
+			.carousel-caption{
+				.social-icon-container {
+					float: left;
+					margin-top: 15px;
+					width: 100%;
+					a {
+						width: 30px;
+						height: 30px; 
+						float: left; 
+						margin: 0 20px 0 0; 
+						opacity: .4;
+						background-color: $primary-light;
+						border: 1px solid $primary-dark;
+					}
+					a.last{
+						margin: 0;
+					}
+					a:hover {
+						opacity: .8;
+					}
+				}
+				margin-bottom: 90px;
+				left: 0%;
+				h1 {
+					text-align: left;
+					margin-bottom: 10px;
+				}
+				p {
+					text-align: left;
+					width: 40%
+				}
+				a {
+					text-align: left;
+					float: left;
+					width: 100%;
+				}
+			}
+		}
+		.item.background-1 {
+			background-image: url("../img/main-background.png");
+		}
+		.item.background-2 {
+			background-image: url("../img/main-background2.png");
+		}
+		.item.background-3 {
+			background-image: url("../img/main-background3.png");
+		}
+	}	
+}
+
+
+.popover-content {
+	display: none;
 }
 .scroll-top.affix{
 	background-color: black;
@@ -105,25 +147,29 @@ a {
 	min-height: 20px;
 	padding: 0;
 	width: 100%;
-		.navbar-nav{
-			li {
-				a {
-					color: $primary-light;
-					margin: 0px 20px;
-					padding: 7px 15px;
-				}
-				a.first {
-					margin-left: 15px;
-					padding-left: 0px;
-				}
-				a:hover {
-					background-color: $primary-dark;
-					color: white;
-					font-weight: bold;
-				}
-				.active{
-					color: white;
-					font-weight: bold;
+		.navbar-inner {
+			width: 1200px;
+			margin: 0 auto;
+			.navbar-nav{
+				li {
+					a {
+						color: $primary-light;
+						margin: 0px 20px;
+						padding: 7px 15px;
+					}
+					a.first {
+						margin-left: 15px;
+						padding-left: 0px;
+					}
+					a:hover {
+						background-color: $primary-dark;
+						color: white;
+						font-weight: bold;
+					}
+					.active{
+						color: white;
+						font-weight: bold;
+					}
 				}
 			}
 		}	
@@ -147,6 +193,25 @@ a {
 			margin-bottom: 10px;
 		}
 	}
+	.white-tilted-container {
+		width: 90%;
+		float: left;
+		background-color: rgb(255,255,255);
+		-ms-transform: rotate(-7deg); /* IE 9 */
+	    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+	    transform: rotate(-7deg);
+	    box-shadow: 2px 2px 2px rgb(90,90,90);
+	    border: 1px solid rgb(0,0,0);
+	    margin-top: -15px;
+	    padding: 2% 5%;
+	    color: rgb(0,0,0);
+	    h2 {
+	    	color: rgb(0,0,0);
+	    }
+	    p{
+	    	color: rgb(0,0,0);
+	    }
+	}
 	.amanda-image {
 		background-image: url("../img/amanda-image.png");
 		background-size: cover;
@@ -158,8 +223,10 @@ a {
 }
 .work-section {
 	background-color: white;
+	background-image: url("../img/main-light-back.png");
+	background-size: cover;
 	min-height: 300px;
-	padding-top: 30px;
+	padding-top: 200px;
 	padding-bottom: 200px;
 	h2 {
 		color: $primary-color;
@@ -195,7 +262,24 @@ a {
 			    -moz-transform:scale(1.10); /* Firefox */
 			    -ms-transform:scale(1.10); /* IE 9 */
 			    -o-transform:scale(1.10); /* Opera */
-			     transform:scale(1.10);			}
+			     transform:scale(1.10);		
+			    &:before {	
+			    	content: "learn more!";
+			    	color: white;
+			    	text-align: center; 
+			    	font-weight: bold;
+			    	padding: 10px 0;
+			    	display: block;
+			    	position: absolute;
+			    	bottom: 20px;
+			    	left: 0px;
+			    	opacity: .9;
+			    	border-top: 1px solid white;
+			    	border-bottom: 1px solid white;
+			    	width: 100%;
+			    	background-color: $primary-color;
+			    }
+			}
 		}
 		.col-md-2,
 		.col-lg-2 {
@@ -215,9 +299,11 @@ a {
 }
 .resume-section {
 	background-color: white;
+	background-image: url("../img/main-light-back-2.png");
+	background-size: cover;
 	min-height: 300px;
-	padding-top: 30px;
-	margin-bottom: 300px;
+	padding-top: 200px;
+	padding-bottom: 200px;
 	h2 {
 		color: $primary-color;
 		padding-bottom: 10px;
@@ -238,3 +324,4 @@ a {
 		padding: 0;
 	}
 }
+

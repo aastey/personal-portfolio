@@ -6,11 +6,45 @@
         	margin-top: 10%;
         }
     }
+    .carousel {
+    	.carousel-item {
+    		height: 200px;
+    	}
+    	.carousel-inner {
+    		.item {
+    			.carousel-caption {
+    				margin-bottom: 0;
+    				h1 {
+    					font-size: 30px;
+    				}
+    			}
+    		}
+    	}
+        h3{
+			display: none;
+		}
+    	.carousel-indicators {
+    		display: none;
+    	}
+    }
 	.about-section {
 		padding-top: 0px;
 		.amanda-image {
 			display: none;
 		}
+		.white-tilted-container {
+		    margin-top: 30px;
+		    -ms-transform: rotate(-4deg); /* IE 9 */
+	    	-webkit-transform: rotate(-4deg); /* Chrome, Safari, Opera */
+	    	transform: rotate(-4deg);
+		}
+	}
+	.work-section {
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+	.resume-section {
+		padding-top: 40px;
 	}
 	.navbar.affix {
 	    top: 80px;

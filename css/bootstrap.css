@@ -5538,6 +5538,7 @@ button.close {
 .carousel-control .icon-next:before {
   content: '\203a';
 }
+/*
 .carousel-indicators {
   position: absolute;
   bottom: 10px;
@@ -5549,6 +5550,7 @@ button.close {
   text-align: center;
   list-style: none;
 }
+*/
 .carousel-indicators li {
   display: inline-block;
   width: 10px;
