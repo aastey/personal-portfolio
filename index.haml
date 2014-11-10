@@ -14,6 +14,7 @@
                 %li.active{"data-target"=>"#homeCarousel", "data-slide-to"=>"0"}
                 %li{"data-target"=>"#homeCarousel", "data-slide-to"=>"1"}
                 %li{"data-target"=>"#homeCarousel", "data-slide-to"=>"2"}
+                %li{"data-target"=>"#homeCarousel", "data-slide-to"=>"3"}
               .carousel-inner
                 .carousel-item.item.active.background-1
                   .carousel-caption.fade-in-slow
@@ -27,12 +28,25 @@
                         %img.social-img(src="img/social-github.png")
                 .carousel-item.item.background-2
                   .carousel-caption.fade-in-slow
-                    %h1 flashband project
-                    %a{:href => "#"} view it here
+                    %h1 flashband 
+                    %p Flashband is an organization that helps musicians meet, network and play music. In addition to being a co-founder of the project, I am also its lead designer and front-end developer.
+                    %p Since its inception in 2012, Flashband has grown from a few friends using google docs to organize jam sessions to a fully fledged social-media platform. The website helps musicians find and communicate with others in addition to helping them participate in our popular "Showcases" throughout the city.
+                    %a{:href => "#"} view the website
                 .carousel-item.item.background-3
                   .carousel-caption.fade-in-slow
                     %h1 diversity map
-                    %a{:href => "#"} view it here        
+                    %p The USA TODAY "diversity index" was creating using Census data to calculate the chance that two random people in area are different by race or ethnicity. The scale ranges from 0-100 and has been calculated for counties across the US every year since 1960. 
+                    %p The diversity map illustrates the data both by location and chonology 
+                    %p This was my first time utilizing the d3.js library and as the sole developer for this project I dove in head first.
+                    %a{:href => "#"} view the diversity map   
+                .carousel-item.item.background-3
+                  .carousel-caption.fade-in-slow
+                    %h1 election forecast and results
+                    %p The USA TODAY "diversity index" was creating using Census data to calculate the chance that two random people in area are different by race or ethnicity. The scale ranges from 0-100 and has been calculated for counties across the US every year since 1960. 
+                    %p The diversity map illustrates the data both by location and chonology 
+                    %p This was my first time utilizing the d3.js library and as the sole developer for this project I dove in head first.
+                    %a{:href => "#"} view forecast  
+                    %a{:href => "#"} view results       
       .scroll-top( data-spy="affix")
       %nav.navbar.navbar-default( data-spy="affix")
         .navbar-inner
