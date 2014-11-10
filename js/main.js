@@ -45,19 +45,22 @@ $('.scroll-top').affix({
 var navChange= function(e){
 	$(".nav-link").removeClass("active");
 	$(this).addClass("active");
-   
+
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      var topDistance = 20;
-      if (target == "about") {
-        topDistance = 500;
-      } 
+      var topDistance = 10;
+      
       if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top - topDistance
-        }, 1000);
-        return false;
+        if (target.hasClass("about-section") ) {
+           $("html, body").animate({ scrollTop: 0 },1000);
+           return false;
+        } else {
+          $('html,body').animate({
+             scrollTop: target.offset().top - topDistance
+           }, 1000);
+           return false;
+        }
       }
     }
 
