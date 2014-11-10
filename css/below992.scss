@@ -3,5 +3,11 @@
 		.amanda-image {
 			display: none;
 		}
+		.white-tilted-container {
+		    margin-top: 40px;
+		    -ms-transform: rotate(-4deg); /* IE 9 */
+	    	-webkit-transform: rotate(-4deg); /* Chrome, Safari, Opera */
+	    	transform: rotate(-4deg);
+		}
 	}
 } 

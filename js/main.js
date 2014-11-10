@@ -1,6 +1,7 @@
 $( document ).ready( function() {
   //click events 
   $(".nav-link").click(navChange);
+  $(".toolhover").popover({ trigger: "hover" })
 
   // Parallax Scrolling
     //for IE

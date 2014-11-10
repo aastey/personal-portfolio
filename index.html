@@ -7,18 +7,30 @@
   <body>
     <div id='portfolioApp'>
       <div class='container-fluid main-background'>
-        <div class='container background-image'>
-          <h1>my name is amanda<br /> and i build websites</h1>
-          <div class='social-icon-container'>
-            <a class='mail' href='#'>
-              <img src='img/social-mail.png'>
-            </a>
-            <a class='linked' href='#'>
-              <img src='img/social-linked.png'>
-            </a>
-            <a class='facebook' href='#'>
-              <img src='img/social-facebook.png'>
-            </a>
+        <div class='carousel slide' data-interval='5000' data-ride='carousel' id='homeCarousel'>
+          <ol class='carousel-indicators'>
+            <li class='active' data-slide-to='0' data-target='#homeCarousel'></li>
+            <li data-slide-to='1' data-target='#homeCarousel'></li>
+            <li data-slide-to='2' data-target='#homeCarousel'></li>
+          </ol>
+          <div class='carousel-inner'>
+            <div class='carousel-item item active background-1'>
+              <div class='carousel-caption'>
+                <h1>my name is amanda <br /> and I build websites</h1>
+              </div>
+            </div>
+            <div class='carousel-item item background-2'>
+              <div class='carousel-caption'>
+                <h1>flashband project</h1>
+                <a href='#'>view it here</a>
+              </div>
+            </div>
+            <div class='carousel-item item background-3'>
+              <div class='carousel-caption'>
+                <h1>diversity map</h1>
+                <a href='#'>view it here</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -48,9 +60,20 @@
       </nav>
       <section class='container-fluid about-section' data-speed='4' data-type='background' id='about'>
         <div class='container'>
-          <div class='row'>
+          <div class='row fade-in'>
             <div class='col-lg-2 col-md-2 col-sm-12'>
               <div class='img-thumbnail amanda-image'></div>
+              <div class='social-icon-container'>
+                <a class='mail toolhover' data-placement='top' data-toggle='tooltip' href='#' title='Email Me'>
+                  <img class='social-img' src='img/social-mail.png'>
+                </a>
+                <a class='linked toolhover' data-placement='top' data-toggle='tooltip' href='#' title='LinkedIn Profile'>
+                  <img class='social-img' src='img/social-linked.png'>
+                </a>
+                <a class='github last toolhover' data-placement='top' data-toggle='tooltip' href='#' title='View me on GitHub'>
+                  <img class='social-img' src='img/social-github.png'>
+                </a>
+              </div>
             </div>
             <div class='col-lg-3 col-md-3 col-sm-12'>
               <h2>the basics</h2>
@@ -62,11 +85,13 @@
               </ul>
             </div>
             <div class='col-lg-6 col-md-5 col-sm-12'>
-              <h2>the details</h2>
-              <p>I am a sucker for clean, functional websites. I love bright colors and anything with a playful feel.</p>
-              <p>In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.</p>
-              <p>In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.</p>
-              <p>Feel free to contact me at amanda.astey@gmail.com!</p>
+              <div class='white-tilted-container fade-in-slow'>
+                <h2>the details</h2>
+                <p>I am a sucker for clean, functional websites. I love bright colors and anything with a playful feel.</p>
+                <p>In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.</p>
+                <p>In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.</p>
+                <p>Feel free to contact me at amanda.astey@gmail.com!</p>
+              </div>
             </div>
           </div>
         </div>
@@ -93,7 +118,7 @@
               </p>
             </div>
             <div class='col-lg-3 col-md-3 col-sm-12'>
-              <div class='img-thumbnail portfolio-square elections'></div>
+              <a class='img-thumbnail portfolio-square elections' href='/elections.haml'></a>
             </div>
             <div class='col-lg-2 col-md-2 col-sm-12'>
               <h4>Elections Forecast</h4>
