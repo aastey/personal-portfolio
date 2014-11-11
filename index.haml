@@ -11,10 +11,11 @@
             #homeCarousel.carousel.slide{"data-interval" => "false", "data-ride" => "carousel"}
               %h3 quickly browse a few of my favorite projects:
               %ol.carousel-indicators
-                %li.active{"data-target"=>"#homeCarousel", "data-slide-to"=>"0"}
-                %li{"data-target"=>"#homeCarousel", "data-slide-to"=>"1"}
-                %li{"data-target"=>"#homeCarousel", "data-slide-to"=>"2"}
-                %li{"data-target"=>"#homeCarousel", "data-slide-to"=>"3"}
+                %li.carousel-ind-1.active{"data-target"=>"#homeCarousel", "data-slide-to"=>"0"}
+                %li.carousel-ind-2{"data-target"=>"#homeCarousel", "data-slide-to"=>"1"}
+                %li.carousel-ind-3{"data-target"=>"#homeCarousel", "data-slide-to"=>"2"}
+                %li.carousel-ind-4{"data-target"=>"#homeCarousel", "data-slide-to"=>"3"}
+                %li.carousel-ind-5{"data-target"=>"#homeCarousel", "data-slide-to"=>"4"}
               .carousel-inner
                 .carousel-item.item.active.background-1
                   .carousel-caption.fade-in-slow
@@ -39,14 +40,19 @@
                     %p The diversity map illustrates the data both by location and chonology 
                     %p This was my first time utilizing the d3.js library and as the sole developer for this project I dove in head first.
                     %a{:href => "#"} view the diversity map   
-                .carousel-item.item.background-3
+                .carousel-item.item.background-4
                   .carousel-caption.fade-in-slow
                     %h1 election forecast and results
                     %p The USA TODAY "diversity index" was creating using Census data to calculate the chance that two random people in area are different by race or ethnicity. The scale ranges from 0-100 and has been calculated for counties across the US every year since 1960. 
                     %p The diversity map illustrates the data both by location and chonology 
                     %p This was my first time utilizing the d3.js library and as the sole developer for this project I dove in head first.
                     %a{:href => "#"} view forecast  
-                    %a{:href => "#"} view results       
+                    %a{:href => "#"} view results   
+                .carousel-item.item.background-5
+                  .carousel-caption.fade-in-slow
+                    %h1 wheelie's skydiving whale
+                    %p Development is where I thrive but illustration will always be a part of me. 
+                    %a{:href => "#"} view the original poster      
       .scroll-top( data-spy="affix")
       %nav.navbar.navbar-default( data-spy="affix")
         .navbar-inner
@@ -60,7 +66,9 @@
               %li
                 %a.nav-link.first.active{:href => '#about'} about
               %li
-                %a.nav-link{:href => '#work'} work
+                %a.nav-link{:href => '#develop'} develop
+              %li
+                %a.nav-link{:href => '#art'} art
               %li
                 %a.nav-link{:href => '#resume'} resume
       %section#about.container-fluid.about-section{:data => {:speed => "4", :type => "background"}} 
@@ -82,11 +90,66 @@
                 %p In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.
                 %p In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.
                 %p Feel free to contact me at amanda.astey@gmail.com!
-      %section#work.container-fluid.work-section{:data => {:speed => "1", :type => "background"}} 
+      %section#develop.container-fluid.develop-section{:data => {:speed => "1", :type => "background"}} 
         .container
           .row
             .col-lg-12.col-md-12.col-sm-12
-              %h2 work
+              %h2 develop
+          .row
+            .col-lg-3.col-md-3.col-sm-12
+              .img-thumbnail.portfolio-square.flashband
+            .col-lg-2.col-md-2.col-sm-12
+              %h4 Flashband
+              %p 
+                %a.website-link{:href => 'http://www.flashband.org'} Flashband Website
+              %p Here is a description of Flashband. 
+              %p
+                %a{:href => '#'} View it on Github!
+            .col-lg-3.col-md-3.col-sm-12
+              %a.img-thumbnail.portfolio-square.elections{:href => '/elections.haml'}
+            .col-lg-2.col-md-2.col-sm-12
+              %h4 Elections Forecast
+              %p 
+                %a.website-link{:href => 'http://www.usatoday.com/pages/interactives/elections-forecast-2014/'} Elections App
+              %p Here is a description of the elections forecast. 
+          .row
+            .col-lg-3.col-md-3.col-sm-12
+              .img-thumbnail.portfolio-square.ghost
+            .col-lg-2.col-md-2.col-sm-12
+              %h4 Ghost Factories
+              %p 
+                %a.website-link{:href => 'http://usatoday30.usatoday.com/news/nation/smelting-lead-contamination'} Ghost Factories App
+              %p Here is a description of the elections forecast. 
+            .col-lg-3.col-md-3.col-sm-12
+              .img-thumbnail.portfolio-square.ccc
+            .col-lg-2.col-md-2.col-sm-12
+              %h4 College and Career Connections
+              %p 
+                %a.website-link.unactive{:href => '#'} Website no longer active
+              %p Here is a description of the elections forecast. 
+            .col-lg-3.col-md-3.col-sm-12
+              .img-thumbnail.portfolio-square.template
+            .col-lg-2.col-md-2.col-sm-12
+              %h4 Article Templates
+              %p 
+                %a.website-link{:href => 'http://www.flashband.org'} www.flashband.org
+              %p Here is a description of the elections forecast. 
+              %p
+                %a{:href => '#'} View it on Github!
+            .col-lg-3.col-md-3.col-sm-12
+              .img-thumbnail.portfolio-square.this
+            .col-lg-2.col-md-2.col-sm-12
+              %h4 This Website
+              %p 
+                %a.website-link{:href => 'http://www.flashband.org'} www.flashband.org
+              %p Here is a description of the elections forecast. 
+              %p
+                %a{:href => '#'} View it on Github!
+      %section#art.container-fluid.art-section{:data => {:speed => "1", :type => "background"}} 
+        .container
+          .row
+            .col-lg-12.col-md-12.col-sm-12
+              %h2 design
           .row
             .col-lg-3.col-md-3.col-sm-12
               .img-thumbnail.portfolio-square.flashband
