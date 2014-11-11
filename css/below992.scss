@@ -1,4 +1,15 @@
 @media all and (max-width: 991px) {
+	.carousel {
+		.carousel-inner {
+			.item {
+					p {
+						text-align: left;
+						width: 60%
+					}
+			}
+		}	
+	}
+
 	.about-section {
 		.amanda-image {
 			display: none;

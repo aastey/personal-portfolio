@@ -12,10 +12,11 @@
             <div class='carousel slide' data-interval='false' data-ride='carousel' id='homeCarousel'>
               <h3>quickly browse a few of my favorite projects:</h3>
               <ol class='carousel-indicators'>
-                <li class='active' data-slide-to='0' data-target='#homeCarousel'></li>
-                <li data-slide-to='1' data-target='#homeCarousel'></li>
-                <li data-slide-to='2' data-target='#homeCarousel'></li>
-                <li data-slide-to='3' data-target='#homeCarousel'></li>
+                <li class='carousel-ind-1 active' data-slide-to='0' data-target='#homeCarousel'></li>
+                <li class='carousel-ind-2' data-slide-to='1' data-target='#homeCarousel'></li>
+                <li class='carousel-ind-3' data-slide-to='2' data-target='#homeCarousel'></li>
+                <li class='carousel-ind-4' data-slide-to='3' data-target='#homeCarousel'></li>
+                <li class='carousel-ind-5' data-slide-to='4' data-target='#homeCarousel'></li>
               </ol>
               <div class='carousel-inner'>
                 <div class='carousel-item item active background-1'>
@@ -39,7 +40,7 @@
                     <h1>flashband</h1>
                     <p>Flashband is an organization that helps musicians meet, network and play music. In addition to being a co-founder of the project, I am also its lead designer and front-end developer.</p>
                     <p>Since its inception in 2012, Flashband has grown from a few friends using google docs to organize jam sessions to a fully fledged social-media platform. The website helps musicians find and communicate with others in addition to helping them participate in our popular "Showcases" throughout the city.</p>
-                    <a href='#'>view it here</a>
+                    <a href='#'>view the website</a>
                   </div>
                 </div>
                 <div class='carousel-item item background-3'>
@@ -47,18 +48,25 @@
                     <h1>diversity map</h1>
                     <p>The USA TODAY "diversity index" was creating using Census data to calculate the chance that two random people in area are different by race or ethnicity. The scale ranges from 0-100 and has been calculated for counties across the US every year since 1960.</p>
                     <p>The diversity map illustrates the data both by location and chonology</p>
-                    <p>This was my first project utilizing the d3.js library. I was the sole developer on this project.</p>
-                    <a href='#'>view it here</a>
+                    <p>This was my first time utilizing the d3.js library and as the sole developer for this project I dove in head first.</p>
+                    <a href='#'>view the diversity map</a>
                   </div>
                 </div>
-                <div class='carousel-item item background-3'>
+                <div class='carousel-item item background-4'>
                   <div class='carousel-caption fade-in-slow'>
                     <h1>election forecast and results</h1>
                     <p>The USA TODAY "diversity index" was creating using Census data to calculate the chance that two random people in area are different by race or ethnicity. The scale ranges from 0-100 and has been calculated for counties across the US every year since 1960.</p>
                     <p>The diversity map illustrates the data both by location and chonology</p>
-                    <p>This was my first project utilizing the d3.js library. I was the sole developer on this project.</p>
+                    <p>This was my first time utilizing the d3.js library and as the sole developer for this project I dove in head first.</p>
                     <a href='#'>view forecast</a>
                     <a href='#'>view results</a>
+                  </div>
+                </div>
+                <div class='carousel-item item background-5'>
+                  <div class='carousel-caption fade-in-slow'>
+                    <h1>wheelie's skydiving whale</h1>
+                    <p>Development is where I thrive but illustration will always be a part of me.</p>
+                    <a href='#'>view the original poster</a>
                   </div>
                 </div>
               </div>
@@ -81,7 +89,10 @@
                 <a class='nav-link first active' href='#about'>about</a>
               </li>
               <li>
-                <a class='nav-link' href='#work'>work</a>
+                <a class='nav-link' href='#develop'>develop</a>
+              </li>
+              <li>
+                <a class='nav-link' href='#art'>art</a>
               </li>
               <li>
                 <a class='nav-link' href='#resume'>resume</a>
@@ -117,11 +128,93 @@
           </div>
         </div>
       </section>
-      <section class='container-fluid work-section' data-speed='1' data-type='background' id='work'>
+      <section class='container-fluid develop-section' data-speed='1' data-type='background' id='develop'>
         <div class='container'>
           <div class='row'>
             <div class='col-lg-12 col-md-12 col-sm-12'>
-              <h2>work</h2>
+              <h2>develop</h2>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-lg-3 col-md-3 col-sm-12'>
+              <div class='img-thumbnail portfolio-square flashband'></div>
+            </div>
+            <div class='col-lg-2 col-md-2 col-sm-12'>
+              <h4>Flashband</h4>
+              <p>
+                <a class='website-link' href='http://www.flashband.org'>Flashband Website</a>
+              </p>
+              <p>Here is a description of Flashband.</p>
+              <p>
+                <a href='#'>View it on Github!</a>
+              </p>
+            </div>
+            <div class='col-lg-3 col-md-3 col-sm-12'>
+              <a class='img-thumbnail portfolio-square elections' href='/elections.haml'></a>
+            </div>
+            <div class='col-lg-2 col-md-2 col-sm-12'>
+              <h4>Elections Forecast</h4>
+              <p>
+                <a class='website-link' href='http://www.usatoday.com/pages/interactives/elections-forecast-2014/'>Elections App</a>
+              </p>
+              <p>Here is a description of the elections forecast.</p>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-lg-3 col-md-3 col-sm-12'>
+              <div class='img-thumbnail portfolio-square ghost'></div>
+            </div>
+            <div class='col-lg-2 col-md-2 col-sm-12'>
+              <h4>Ghost Factories</h4>
+              <p>
+                <a class='website-link' href='http://usatoday30.usatoday.com/news/nation/smelting-lead-contamination'>Ghost Factories App</a>
+              </p>
+              <p>Here is a description of the elections forecast.</p>
+            </div>
+            <div class='col-lg-3 col-md-3 col-sm-12'>
+              <div class='img-thumbnail portfolio-square ccc'></div>
+            </div>
+            <div class='col-lg-2 col-md-2 col-sm-12'>
+              <h4>College and Career Connections</h4>
+              <p>
+                <a class='website-link unactive' href='#'>Website no longer active</a>
+              </p>
+              <p>Here is a description of the elections forecast.</p>
+            </div>
+            <div class='col-lg-3 col-md-3 col-sm-12'>
+              <div class='img-thumbnail portfolio-square template'></div>
+            </div>
+            <div class='col-lg-2 col-md-2 col-sm-12'>
+              <h4>Article Templates</h4>
+              <p>
+                <a class='website-link' href='http://www.flashband.org'>www.flashband.org</a>
+              </p>
+              <p>Here is a description of the elections forecast.</p>
+              <p>
+                <a href='#'>View it on Github!</a>
+              </p>
+            </div>
+            <div class='col-lg-3 col-md-3 col-sm-12'>
+              <div class='img-thumbnail portfolio-square this'></div>
+            </div>
+            <div class='col-lg-2 col-md-2 col-sm-12'>
+              <h4>This Website</h4>
+              <p>
+                <a class='website-link' href='http://www.flashband.org'>www.flashband.org</a>
+              </p>
+              <p>Here is a description of the elections forecast.</p>
+              <p>
+                <a href='#'>View it on Github!</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='container-fluid art-section' data-speed='1' data-type='background' id='art'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-lg-12 col-md-12 col-sm-12'>
+              <h2>design</h2>
             </div>
           </div>
           <div class='row'>
