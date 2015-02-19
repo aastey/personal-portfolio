@@ -1,4 +1,4 @@
-@media all and (max-width: 991px) {
+@media all and (max-width: 1200px) {
 	.carousel {
 		.carousel-inner {
 			.item {
@@ -9,7 +9,18 @@
 			}
 		}	
 	}
-
+	.sub-header-background {
+		width: 100%;
+		h1 {
+			margin: 20px 10px 10px 10px;
+		}
+		.social-icon-container {
+			margin-right: 10px;
+		}
+	}
+	.navbar .navbar-inner {
+		width: 100%
+	}
 	.about-section {
 		.amanda-image {
 			display: none;

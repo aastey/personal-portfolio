@@ -1,10 +1,10 @@
 <div ng-include='"templates/subheader.html"'></div>
-<div class="container row-fluid">
-  <div class="col-md-8 col-sm-12">
-    <h1>{{title}}</h1>
-    <p>{{description}}</p>
+<div class="container row-fluid portfolio fade-in">
+  <div class="col-md-5 col-sm-12">
+    <h2>{{title}}</h2>
+    <p ng-bind-html="my_html | to_trusted">{{description}}</p>
   </div>
-  <div class="col-md-4 col-sm-12">
+  <div class="col-md-7 col-sm-12">
   </div>
 
 </div>

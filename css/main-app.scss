@@ -32,10 +32,15 @@ a {
 		color: rgb(255,255,255);
 		font-size: 27px;
 		text-align: right;
+		width: 100%;
+		float: right;
 	}
 	.social-icon-container {
-		float:right;
 		opacity: .6;
+		float: right;
+		a{
+			margin-left: 5px;
+		}
 	}
 }
 .carousel {
@@ -159,7 +164,12 @@ a {
 	}	
 }
 
-
+.portfolio {
+	margin-top: 20px;
+	h2 {
+		font-family: steel;
+	}
+}
 .popover-content {
 	display: none;
 }
