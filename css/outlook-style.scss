@@ -1,3 +1,4 @@
+@import url(bootstrap.css);
 @font-face {
   font-family: steel;
   src: url("../fonts/steelfish.ttf"); }
@@ -11,21 +12,6 @@ a {
 
 .main-background {
   background-color: black; }
-
-.sub-header-background {
-  background-position: 0px -125px;
-  background-repeat: no-repeat;
-  height: 100px;
-  width: 1200px;
-  margin: 0 auto; }
-  .sub-header-background h1 {
-    text-transform: lowercase;
-    color: white;
-    font-size: 27px;
-    text-align: right; }
-  .sub-header-background .social-icon-container {
-    float: right;
-    opacity: .6; }
 
 .carousel h3 {
   float: left;
@@ -43,9 +29,8 @@ a {
   height: 500px; }
 .carousel .carousel-indicators {
   position: absolute;
-  bottom: 10px;
-  left: 0%;
-  margin-left: 0;
+  bottom: 10;
+  left: 0;
   z-index: 15;
   width: 100%;
   padding-left: 0;
@@ -154,14 +139,12 @@ a {
 .navbar {
   background-color: #b13e34;
   border-radius: 0;
-  border: none;
   box-shadow: 5px 1px 5px #3d130f;
   margin: 0px;
   min-height: 20px;
   padding: 0;
   width: 100%; }
   .navbar .navbar-inner {
-    background-color: #b13e34;
     width: 1200px;
     margin: 0 auto; }
     .navbar .navbar-inner .navbar-nav li a {
@@ -220,79 +203,160 @@ a {
     min-height: 240px;
     width: 90%; }
 
-.art-section,
-.develop-section {
+.art-section {
   background-color: white;
+  background-image: url("../img/main-light-back.png");
   background-size: cover;
   min-height: 300px;
-  padding-top: 10px;
+  padding-top: 0px;
   padding-bottom: 200px; }
-  .art-section h2,
-  .develop-section h2 {
+  .art-section h2 {
     color: #b6483c;
-    padding-bottom: 10px;
-    font-family: steel;
-    margin-bottom: 30px; }
-  .art-section p,
-  .develop-section p {
+    padding-bottom: 10px; }
+  .art-section p {
     color: black; }
-  .art-section .portfolio-thumb,
-  .develop-section .portfolio-thumb {
-    width: 100%;
-    height: 200px;
-    float: left;
-    border: 4px solid #f3c1bc;
-    z-index: 99;
-    background-size: cover;
-    background-repeat: no-repeat;
+  .art-section .row .col-md-3,
+  .art-section .row .col-lg-3 {
     margin-bottom: 30px; }
-  .art-section .portfolio-thumb:hover,
-  .develop-section .portfolio-thumb:hover {
-    -webkit-transform: scale(1.1);
-    /* Safari and Chrome */
-    -moz-transform: scale(1.1);
-    /* Firefox */
-    -ms-transform: scale(1.1);
-    /* IE 9 */
-    -o-transform: scale(1.1);
-    /* Opera */
-    transform: scale(1.1); }
-    .art-section .portfolio-thumb:hover:before,
-    .develop-section .portfolio-thumb:hover:before {
-      content: "learn more!";
-      color: white;
-      text-align: center;
-      font-weight: bold;
-      padding: 10px 0;
-      display: block;
-      position: absolute;
-      bottom: 20px;
-      left: 0px;
-      opacity: .9;
-      border-top: 1px solid white;
-      border-bottom: 1px solid white;
+    .art-section .row .col-md-3 .portfolio-square,
+    .art-section .row .col-lg-3 .portfolio-square {
       width: 100%;
-      background-color: #b6483c; }
-  .art-section a.website-link,
-  .develop-section a.website-link {
+      height: 200px;
+      float: left;
+      border: 4px solid #f3c1bc;
+      z-index: 99;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .art-section .row .col-md-3 .portfolio-square.flashband,
+    .art-section .row .col-lg-3 .portfolio-square.flashband {
+      background-image: url("../img/work-flashband.png"); }
+    .art-section .row .col-md-3 .portfolio-square.elections,
+    .art-section .row .col-lg-3 .portfolio-square.elections {
+      background-image: url("../img/work-election.png"); }
+    .art-section .row .col-md-3 .portfolio-square.ghost,
+    .art-section .row .col-lg-3 .portfolio-square.ghost {
+      background-image: url("../img/work-ghost.png"); }
+    .art-section .row .col-md-3 .portfolio-square:hover,
+    .art-section .row .col-lg-3 .portfolio-square:hover {
+      -webkit-transform: scale(1.1);
+      /* Safari and Chrome */
+      -moz-transform: scale(1.1);
+      /* Firefox */
+      -ms-transform: scale(1.1);
+      /* IE 9 */
+      -o-transform: scale(1.1);
+      /* Opera */
+      transform: scale(1.1); }
+      .art-section .row .col-md-3 .portfolio-square:hover:before,
+      .art-section .row .col-lg-3 .portfolio-square:hover:before {
+        content: "learn more!";
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px 0;
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+        opacity: .9;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        width: 100%;
+        background-color: #b6483c; }
+  .art-section .row .col-md-2 h4,
+  .art-section .row .col-lg-2 h4 {
+    margin-bottom: 2px; }
+  .art-section .row .col-md-2 a.website-link,
+  .art-section .row .col-lg-2 a.website-link {
     color: #b6483c;
     margin: 0;
     padding: 0; }
-  .art-section a.website-link.unactive,
-  .develop-section a.website-link.unactive {
+  .art-section .row .col-md-2 a.website-link.unactive,
+  .art-section .row .col-lg-2 a.website-link.unactive {
+    color: #bebebe; }
+
+.develop-section {
+  background-color: white;
+  background-image: url("../img/main-light-back.png");
+  background-size: cover;
+  min-height: 300px;
+  padding-top: 200px;
+  padding-bottom: 200px; }
+  .develop-section h2 {
+    color: #b6483c;
+    padding-bottom: 10px; }
+  .develop-section p {
+    color: black; }
+  .develop-section .row .col-md-3,
+  .develop-section .row .col-lg-3 {
+    margin-bottom: 30px; }
+    .develop-section .row .col-md-3 .portfolio-square,
+    .develop-section .row .col-lg-3 .portfolio-square {
+      width: 100%;
+      height: 200px;
+      float: left;
+      border: 4px solid #f3c1bc;
+      z-index: 99;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .develop-section .row .col-md-3 .portfolio-square.flashband,
+    .develop-section .row .col-lg-3 .portfolio-square.flashband {
+      background-image: url("../img/work-flashband.png"); }
+    .develop-section .row .col-md-3 .portfolio-square.elections,
+    .develop-section .row .col-lg-3 .portfolio-square.elections {
+      background-image: url("../img/work-election.png"); }
+    .develop-section .row .col-md-3 .portfolio-square.ghost,
+    .develop-section .row .col-lg-3 .portfolio-square.ghost {
+      background-image: url("../img/work-ghost.png"); }
+    .develop-section .row .col-md-3 .portfolio-square:hover,
+    .develop-section .row .col-lg-3 .portfolio-square:hover {
+      -webkit-transform: scale(1.1);
+      /* Safari and Chrome */
+      -moz-transform: scale(1.1);
+      /* Firefox */
+      -ms-transform: scale(1.1);
+      /* IE 9 */
+      -o-transform: scale(1.1);
+      /* Opera */
+      transform: scale(1.1); }
+      .develop-section .row .col-md-3 .portfolio-square:hover:before,
+      .develop-section .row .col-lg-3 .portfolio-square:hover:before {
+        content: "learn more!";
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px 0;
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+        opacity: .9;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        width: 100%;
+        background-color: #b6483c; }
+  .develop-section .row .col-md-2 h4,
+  .develop-section .row .col-lg-2 h4 {
+    margin-bottom: 2px; }
+  .develop-section .row .col-md-2 a.website-link,
+  .develop-section .row .col-lg-2 a.website-link {
+    color: #b6483c;
+    margin: 0;
+    padding: 0; }
+  .develop-section .row .col-md-2 a.website-link.unactive,
+  .develop-section .row .col-lg-2 a.website-link.unactive {
     color: #bebebe; }
 
 .resume-section {
   background-color: white;
+  background-image: url("../img/main-light-back-2.png");
   background-size: cover;
   min-height: 300px;
-  padding-top: 10px;
+  padding-top: 200px;
   padding-bottom: 200px; }
   .resume-section h2 {
     color: #b6483c;
-    padding-bottom: 10px;
-    font-family: steel;
-    margin-bottom: 30px; }
+    padding-bottom: 10px; }
   .resume-section h4 {
     margin-top: 30px;
     color: #b6483c; }
@@ -460,4 +524,4 @@ a {
   .container.background-image h1 {
     margin-top: 16%; } }
 
-/*# sourceMappingURL=outlook-style.css.map */
+/*# sourceMappingURL=outlook-style.scss.map */

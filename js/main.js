@@ -1,68 +1,123 @@
-$( document ).ready( function() {
-  //click events 
-  $(".nav-link").click(navChange);
-  $(".toolhover").popover({ trigger: "hover" })
+/**
+ * AngularJS Tutorial 1
+ * @author Nick Kaye <nick.c.kaye@gmail.com>
+ */
 
-  // Parallax Scrolling
-    //for IE
-    document.createElement("section");
-    // cache the window object
-    $window = $(window);
-   
-    $('section[data-type="background"]').each(function(){
-      // declare the variable to affect the defined data-type
-      var $scroll = $(this);
-                      
-       $(window).scroll(function() {
-         // HTML5 proves useful for helping with creating JS functions!
-         // also, negative value because we're scrolling upwards                             
-         var yPos = -($window.scrollTop() / $scroll.data('speed')); 
-          
-         // background position
-         var coords = '50% '+ yPos + 'px';
-   
-         // move the background
-         $scroll.css({ backgroundPosition: coords });    
-       }); // end window scroll
-    });  // end section function
+/**
+ * Main AngularJS Web Application
+ */
+var app = angular.module('amandaPortfolio', [
+  'ngRoute'
+]);
+/**
+ * Configure the Routes
+ */
+app.config(['$routeProvider', function ($routeProvider) {
+  $routeProvider
+    // Home
+    .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
+    // Pages
+    .when("/develop", {templateUrl: "partials/develop.html", controller: "PageCtrl"})
+    .when("/design", {templateUrl: "partials/design.html", controller: "PageCtrl"})
+    .when("/resume", {templateUrl: "partials/resume.html", controller: "PageCtrl"})
+    .when("/develop/:page", {templateUrl: "partials/portfolio.html", controller: "DevelopSubPage"})
+    .when("/design/:page", {templateUrl: "partials/portfolio.html", controller: "DesignSubPage"})
+    .otherwise({redirectTo: '/'});
+}]);
 
+/**
+ * Controls all other Pages
+ */
+app.controller('PageCtrl', function (/* $scope, $location, $http */) {
+
+  // Activates the Carousel
+  $('.carousel').carousel({
+    interval: 5000
+  });
+
+  // Activates Tooltips for Social Links
+  $('.tooltip-social').tooltip({
+    selector: "a[data-toggle=tooltip]"
+  })
 });
 
-// Affixed Navbar
-$('.navbar').affix({
-      offset: {
-        top: $('.main-background').height()-$('.navbar-default').height()
-      }
-}); 
+/**
+ * Controls Design Page Template
+ */
+app.controller("DesignCtrl", function($scope, $http) {
+  $http.get('../data/design-projects.json').
+    success(function(data, status, headers, config) {
+      $scope.posts = data;
+    }).
+    error(function(data, status, headers, config) {
+      // log error
+    });
+});
 
-$('.scroll-top').affix({
-      offset: {
-        top: $('.main-background').height()-$('.navbar-default').height()
-      }
-}); 
+/**
+ * Controls Develop Page Template
+ */
+app.controller("DevelopCtrl", function($scope, $http) {
+  $http.get('../data/develop-projects.json').
+    success(function(data, status, headers, config) {
+      $scope.posts = data;
+    }).
+    error(function(data, status, headers, config) {
+      // log error
+    });
+});
 
-
-var navChange= function(e){
-	$(".nav-link").removeClass("active");
-	$(this).addClass("active");
-
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      var topDistance = 10;
+/**
+ * Controls All Design Sub Pages
+ */
+app.controller('DesignSubPage', function($scope,$routeParams, $http) {
+    $http.get('../data/design-projects.json').
+    success(function(data, status, headers, config) {
+      var pagename = $routeParams.page;
+      $scope.posts = data[pagename];
       
-      if (target.length) {
-        if (target.hasClass("about-section") ) {
-           $("html, body").animate({ scrollTop: 0 },1000);
-           return false;
-        } else {
-          $('html,body').animate({
-             scrollTop: target.offset().top - topDistance
-           }, 1000);
-           return false;
-        }
-      }
-    }
+      //all of the pieces needed for the template
+       $scope.title= $scope.posts.name
+       $scope.description = $scope.posts.longDescription;
+       $scope.imageOne = $scope.posts.imageOne;
+       $scope.imageTwo = $scope.posts.imageTwo;
+       $scope.imageThree = $scope.posts.imageThree;
+       $scope.url = $scope.posts.url;
+       $scope.github = $scope.posts.github;
+       $scope.tools = $scope.posts.tools;
 
-}
+    }).
+    error(function(data, status, headers, config) {
+      // log error
+    });
+});
+
+
+/**
+ * Controls All Develop Sub Pages
+ */
+app.controller('DevelopSubPage', function($scope,$routeParams, $http) {
+    $http.get('../data/develop-projects.json').
+    success(function(data, status, headers, config) {
+      var pagename = $routeParams.page;
+      $scope.posts = data[pagename];
+      
+      //all of the pieces needed for the template
+       $scope.title= $scope.posts.name
+       $scope.description = $scope.posts.longDescription;
+       $scope.imageOne = $scope.posts.imageOne;
+       $scope.imageTwo = $scope.posts.imageTwo;
+       $scope.imageThree = $scope.posts.imageThree;
+       $scope.url = $scope.posts.url;
+       $scope.github = $scope.posts.github;
+       $scope.tools = $scope.posts.tools;
+
+    }).
+    error(function(data, status, headers, config) {
+      // log error
+    });
+
+   
+
+});
 

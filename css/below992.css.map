@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,iCAAkC;EAI7B,iCAAE;IACD,UAAU,EAAE,IAAI;IAChB,KAAK,EAAE,GAAG;;EAOd,4BAAc;IACb,OAAO,EAAE,IAAI;EAEd,sCAAwB;IACpB,UAAU,EAAE,IAAI;IAChB,aAAa,EAAE,aAAa;;IAC5B,iBAAiB,EAAE,aAAa;;IAChC,SAAS,EAAE,aAAa",
+"sources": ["below992.scss"],
+"names": [],
+"file": "below992.css"
+}

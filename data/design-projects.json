@@ -1,0 +1,62 @@
+{
+    "flashband":
+    {
+        "name" : "Flashband",
+        "slug" : "flashband",
+        "websitename" : "male",
+	    "url" : "male",
+	    "github" : "male",
+	    "thumb" : "male",
+        "shortDescription" : "flashband is awesome",
+        "longDescription" : "flashband is awesome",
+	    "tools" : "groovy on grails",
+	    "imageOne" : "male",
+	    "imageTwo" : "male",
+	    "imageThree" : "male"
+    },
+    "elections":
+    {
+        "name" : "Flashband",
+        "slug" : "flashband",
+        "websitename" : "male",
+	    "url" : "male",
+	    "github" : "male",
+	    "thumb" : "male",
+        "shortDescription" : "flashband is awesome",
+        "longDescription" : "flashband is awesome",
+	    "tools" : "groovy on grails",
+	    "imageOne" : "male",
+	    "imageTwo" : "male",
+	    "imageThree" : "male"
+    },
+    "test":
+    {
+        "name" : "Flashband",
+        "slug" : "flashband",
+        "websitename" : "male",
+	    "url" : "male",
+	    "github" : "male",
+	    "thumb" : "male",
+        "shortDescription" : "flashband is awesome",
+        "longDescription" : "flashband is awesome",
+	    "tools" : "groovy on grails",
+	    "imageOne" : "male",
+	    "imageTwo" : "male",
+	    "imageThree" : "male"
+    },
+    "test":
+    {
+        "name" : "Flashband",
+        "slug" : "flashband",
+        "websitename" : "male",
+	    "url" : "male",
+	    "github" : "male",
+	    "thumb" : "male",
+        "shortDescription" : "flashband is awesome",
+        "longDescription" : "flashband is awesome",
+	    "tools" : "groovy on grails",
+	    "imageOne" : "male",
+	    "imageTwo" : "male",
+	    "imageThree" : "male"
+    }
+}

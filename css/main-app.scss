@@ -21,7 +21,23 @@ a {
 .main-background {
 	background-color: black;
 }
-
+.sub-header-background {
+	background-position: 0px -125px;
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 1200px;
+	margin: 0 auto;
+	h1 {
+		text-transform: lowercase;
+		color: rgb(255,255,255);
+		font-size: 27px;
+		text-align: right;
+	}
+	.social-icon-container {
+		float:right;
+		opacity: .6;
+	}
+}
 .carousel {
 	h3 {
 		float: left;
@@ -41,8 +57,9 @@ a {
 	}
 	.carousel-indicators {
 		position: absolute;
-		bottom: 10;
-		left: 0;
+		bottom: 10px;
+		left: 0% ;
+		margin-left: 0;
 		z-index: 15;
 		width: 100%;
 		padding-left: 0;
@@ -179,12 +196,14 @@ a {
 .navbar{
 	background-color: $primary-dark;
 	border-radius: 0;
+	border: none;
 	box-shadow: 5px 1px 5px #3d130f;
 	margin: 0px;
 	min-height: 20px;
 	padding: 0;
 	width: 100%;
 		.navbar-inner {
+			background-color: $primary-dark;
 			width: 1200px;
 			margin: 0 auto;
 			.navbar-nav{
@@ -258,168 +277,75 @@ a {
 		width: 90%;
 	}
 }
-.art-section {
-	background-color: white;
-	background-image: url("../img/main-light-back.png");
-	background-size: cover;
-	min-height: 300px;
-	padding-top: 200px;
-	padding-bottom: 200px;
-	h2 {
-		color: $primary-color;
-		padding-bottom: 10px;
-	}
-	p {
-		color: black;
-	}
-	.row {
-		.col-md-3,
-		.col-lg-3 {
-			margin-bottom: 30px;
-			.portfolio-square {
-				width: 100%;
-				height: 200px;
-				float: left;
-				border: 4px solid #f3c1bc;
-				z-index: 99;
-				background-size: cover;
-				background-repeat: no-repeat;
-			}
-			.portfolio-square.flashband {
-				background-image: url("../img/work-flashband.png");
-			}
-			.portfolio-square.elections {
-				background-image: url("../img/work-election.png");
-			}
-			.portfolio-square.ghost{
-				background-image: url("../img/work-ghost.png");
-			}
-			.portfolio-square:hover {
-				-webkit-transform:scale(1.10); /* Safari and Chrome */
-			    -moz-transform:scale(1.10); /* Firefox */
-			    -ms-transform:scale(1.10); /* IE 9 */
-			    -o-transform:scale(1.10); /* Opera */
-			     transform:scale(1.10);		
-			    &:before {	
-			    	content: "learn more!";
-			    	color: white;
-			    	text-align: center; 
-			    	font-weight: bold;
-			    	padding: 10px 0;
-			    	display: block;
-			    	position: absolute;
-			    	bottom: 20px;
-			    	left: 0px;
-			    	opacity: .9;
-			    	border-top: 1px solid white;
-			    	border-bottom: 1px solid white;
-			    	width: 100%;
-			    	background-color: $primary-color;
-			    }
-			}
-		}
-		.col-md-2,
-		.col-lg-2 {
-			h4 {
-				margin-bottom: 2px;
-			}
-			a.website-link {
-				color: $primary-color;
-				margin: 0;
-				padding: 0;
-			}
-			a.website-link.unactive {
-				color: rgb( 190,190,190);
-			}
-		}
-	}
-}
+.art-section,
 .develop-section {
 	background-color: white;
-	background-image: url("../img/main-light-back.png");
 	background-size: cover;
 	min-height: 300px;
-	padding-top: 200px;
+	padding-top: 10px; 
 	padding-bottom: 200px;
 	h2 {
 		color: $primary-color;
 		padding-bottom: 10px;
+		font-family: steel;
+		margin-bottom: 30px;
 	}
 	p {
 		color: black;
 	}
-	.row {
-		.col-md-3,
-		.col-lg-3 {
-			margin-bottom: 30px;
-			.portfolio-square {
-				width: 100%;
-				height: 200px;
-				float: left;
-				border: 4px solid #f3c1bc;
-				z-index: 99;
-				background-size: cover;
-				background-repeat: no-repeat;
-			}
-			.portfolio-square.flashband {
-				background-image: url("../img/work-flashband.png");
-			}
-			.portfolio-square.elections {
-				background-image: url("../img/work-election.png");
-			}
-			.portfolio-square.ghost{
-				background-image: url("../img/work-ghost.png");
-			}
-			.portfolio-square:hover {
-				-webkit-transform:scale(1.10); /* Safari and Chrome */
-			    -moz-transform:scale(1.10); /* Firefox */
-			    -ms-transform:scale(1.10); /* IE 9 */
-			    -o-transform:scale(1.10); /* Opera */
-			     transform:scale(1.10);		
-			    &:before {	
-			    	content: "learn more!";
-			    	color: white;
-			    	text-align: center; 
-			    	font-weight: bold;
-			    	padding: 10px 0;
-			    	display: block;
-			    	position: absolute;
-			    	bottom: 20px;
-			    	left: 0px;
-			    	opacity: .9;
-			    	border-top: 1px solid white;
-			    	border-bottom: 1px solid white;
-			    	width: 100%;
-			    	background-color: $primary-color;
-			    }
-			}
-		}
-		.col-md-2,
-		.col-lg-2 {
-			h4 {
-				margin-bottom: 2px;
-			}
-			a.website-link {
-				color: $primary-color;
-				margin: 0;
-				padding: 0;
-			}
-			a.website-link.unactive {
-				color: rgb( 190,190,190);
-			}
-		}
+	.portfolio-thumb {
+		width: 100%;
+		height: 200px;
+		float: left;
+		border: 4px solid #f3c1bc;
+		z-index: 99;
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin-bottom: 30px;
+	}
+	.portfolio-thumb:hover {
+		-webkit-transform:scale(1.10); /* Safari and Chrome */
+	    -moz-transform:scale(1.10); /* Firefox */
+	    -ms-transform:scale(1.10); /* IE 9 */
+	    -o-transform:scale(1.10); /* Opera */
+	     transform:scale(1.10);		
+	    &:before {	
+	    	content: "learn more!";
+	    	color: white;
+	    	text-align: center; 
+	    	font-weight: bold;
+	    	padding: 10px 0;
+	    	display: block;
+	    	position: absolute;
+	    	bottom: 20px;
+	    	left: 0px;
+	    	opacity: .9;
+	    	border-top: 1px solid white;
+	    	border-bottom: 1px solid white;
+	    	width: 100%;
+	    	background-color: $primary-color;
+	    }
+	}
+	a.website-link {
+		color: $primary-color;
+		margin: 0;
+		padding: 0;
+	}
+	a.website-link.unactive {
+		color: rgb( 190,190,190);
 	}
 }
 .resume-section {
 	background-color: white;
-	background-image: url("../img/main-light-back-2.png");
 	background-size: cover;
 	min-height: 300px;
-	padding-top: 200px;
+	padding-top: 10px;
 	padding-bottom: 200px;
 	h2 {
 		color: $primary-color;
 		padding-bottom: 10px;
+		font-family: steel;
+		margin-bottom: 30px;
 	}
 	h4 {
 		margin-top: 30px; 

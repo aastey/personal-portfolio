@@ -1,382 +1,49 @@
-<html lang='en'>
-  <head>
-    <meta content='text/html' http-equiv='Content-Type'>
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+
+    <!-- Meta-Information -->
     <title>Amanda Astey Portfolio</title>
-    <link href='css/outlook-style.css' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-    <div id='portfolioApp'>
-      <div class='container-fluid main-background'>
-        <div class='row'>
-          <div class='container'>
-            <div class='carousel slide' data-interval='false' data-ride='carousel' id='homeCarousel'>
-              <h3>quickly browse a few of my favorite projects:</h3>
-              <ol class='carousel-indicators'>
-                <li class='carousel-ind-1 active' data-slide-to='0' data-target='#homeCarousel'></li>
-                <li class='carousel-ind-2' data-slide-to='1' data-target='#homeCarousel'></li>
-                <li class='carousel-ind-3' data-slide-to='2' data-target='#homeCarousel'></li>
-                <li class='carousel-ind-4' data-slide-to='3' data-target='#homeCarousel'></li>
-                <li class='carousel-ind-5' data-slide-to='4' data-target='#homeCarousel'></li>
-              </ol>
-              <div class='carousel-inner'>
-                <div class='carousel-item item active background-1'>
-                  <div class='carousel-caption fade-in-slow'>
-                    <h1>my name is amanda <br /> and I build websites</h1>
-                    <div class='social-icon-container'>
-                      <a class='mail toolhover' data-placement='top' data-toggle='tooltip' href='#' title='Email Me'>
-                        <img class='social-img' src='img/social-mail.png'>
-                      </a>
-                      <a class='linked toolhover' data-placement='top' data-toggle='tooltip' href='#' title='LinkedIn Profile'>
-                        <img class='social-img' src='img/social-linked.png'>
-                      </a>
-                      <a class='github last toolhover' data-placement='top' data-toggle='tooltip' href='#' title='View me on GitHub'>
-                        <img class='social-img' src='img/social-github.png'>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class='carousel-item item background-2'>
-                  <div class='carousel-caption fade-in-slow'>
-                    <h1>flashband</h1>
-                    <p>Flashband is an organization that helps musicians meet, network and play music. In addition to being a co-founder of the project, I am also its lead designer and front-end developer.</p>
-                    <p>Since its inception in 2012, Flashband has grown from a few friends using google docs to organize jam sessions to a fully fledged social-media platform. The website helps musicians find and communicate with others in addition to helping them participate in our popular "Showcases" throughout the city.</p>
-                    <a href='#'>view the website</a>
-                  </div>
-                </div>
-                <div class='carousel-item item background-3'>
-                  <div class='carousel-caption fade-in-slow'>
-                    <h1>diversity map</h1>
-                    <p>The USA TODAY "diversity index" was creating using Census data to calculate the chance that two random people in area are different by race or ethnicity. The scale ranges from 0-100 and has been calculated for counties across the US every year since 1960.</p>
-                    <p>The diversity map illustrates the data both by location and chonology</p>
-                    <p>This was my first time utilizing the d3.js library and as the sole developer for this project I dove in head first.</p>
-                    <a href='#'>view the diversity map</a>
-                  </div>
-                </div>
-                <div class='carousel-item item background-4'>
-                  <div class='carousel-caption fade-in-slow'>
-                    <h1>election forecast and results</h1>
-                    <p>The USA TODAY "diversity index" was creating using Census data to calculate the chance that two random people in area are different by race or ethnicity. The scale ranges from 0-100 and has been calculated for counties across the US every year since 1960.</p>
-                    <p>The diversity map illustrates the data both by location and chonology</p>
-                    <p>This was my first time utilizing the d3.js library and as the sole developer for this project I dove in head first.</p>
-                    <a href='#'>view forecast</a>
-                    <a href='#'>view results</a>
-                  </div>
-                </div>
-                <div class='carousel-item item background-5'>
-                  <div class='carousel-caption fade-in-slow'>
-                    <h1>wheelie's skydiving whale</h1>
-                    <p>Development is where I thrive but illustration will always be a part of me.</p>
-                    <a href='#'>view the original poster</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='scroll-top' data-spy='affix'></div>
-      <nav class='navbar navbar-default' data-spy='affix'>
-        <div class='navbar-inner'>
-          <button class='navbar-toggle collapsed' data-target='#bs-example-navbar-collapse-1' data-toggle='collapse'>
-            <span class='sr-only'>Toggle navigation</span>
-            <span class='icon-bar'></span>
-            <span class='icon-bar'></span>
-            <span class='icon-bar'></span>
-          </button>
-          <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
-            <ul class='nav navbar-nav'>
-              <li>
-                <a class='nav-link first active' href='#about'>about</a>
-              </li>
-              <li>
-                <a class='nav-link' href='#develop'>develop</a>
-              </li>
-              <li>
-                <a class='nav-link' href='#art'>art</a>
-              </li>
-              <li>
-                <a class='nav-link' href='#resume'>resume</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <section class='container-fluid about-section' data-speed='4' data-type='background' id='about'>
-        <div class='container'>
-          <div class='row fade-in'>
-            <div class='col-lg-2 col-md-2 col-sm-12'>
-              <div class='img-thumbnail amanda-image'></div>
-            </div>
-            <div class='col-lg-3 col-md-3 col-sm-12'>
-              <h2>the basics</h2>
-              <ul class='bio-summary'>
-                <li>Developer for USA Today since 2011.</li>
-                <li>Co-founder, lead front end designer and developer for Flashband.</li>
-                <li>Graduated Summa Cum Laude from Syracuse University in 2007.</li>
-                <li>Received a certificate in Web Development and Design from the Center of Digital Imaging Arts at Boston University in 2009.</li>
-              </ul>
-            </div>
-            <div class='col-lg-6 col-md-5 col-sm-12'>
-              <div class='white-tilted-container fade-in'>
-                <h2>the details</h2>
-                <p>I am a sucker for clean, functional websites. I love bright colors and anything with a playful feel.</p>
-                <p>In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.</p>
-                <p>In my spare time, I am an avid hobby collector. While rock climbing is my current obsession, I have dabbled in fencing, figure skating, Contra dancing, and automotive repair. I am a huge fan of red wine and sweet potatoes.</p>
-                <p>Feel free to contact me at amanda.astey@gmail.com!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class='container-fluid develop-section' data-speed='1' data-type='background' id='develop'>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-lg-12 col-md-12 col-sm-12'>
-              <h2>develop</h2>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col-lg-3 col-md-3 col-sm-12'>
-              <div class='img-thumbnail portfolio-square flashband'></div>
-            </div>
-            <div class='col-lg-2 col-md-2 col-sm-12'>
-              <h4>Flashband</h4>
-              <p>
-                <a class='website-link' href='http://www.flashband.org'>Flashband Website</a>
-              </p>
-              <p>Here is a description of Flashband.</p>
-              <p>
-                <a href='#'>View it on Github!</a>
-              </p>
-            </div>
-            <div class='col-lg-3 col-md-3 col-sm-12'>
-              <a class='img-thumbnail portfolio-square elections' href='/elections.haml'></a>
-            </div>
-            <div class='col-lg-2 col-md-2 col-sm-12'>
-              <h4>Elections Forecast</h4>
-              <p>
-                <a class='website-link' href='http://www.usatoday.com/pages/interactives/elections-forecast-2014/'>Elections App</a>
-              </p>
-              <p>Here is a description of the elections forecast.</p>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col-lg-3 col-md-3 col-sm-12'>
-              <div class='img-thumbnail portfolio-square ghost'></div>
-            </div>
-            <div class='col-lg-2 col-md-2 col-sm-12'>
-              <h4>Ghost Factories</h4>
-              <p>
-                <a class='website-link' href='http://usatoday30.usatoday.com/news/nation/smelting-lead-contamination'>Ghost Factories App</a>
-              </p>
-              <p>Here is a description of the elections forecast.</p>
-            </div>
-            <div class='col-lg-3 col-md-3 col-sm-12'>
-              <div class='img-thumbnail portfolio-square ccc'></div>
-            </div>
-            <div class='col-lg-2 col-md-2 col-sm-12'>
-              <h4>College and Career Connections</h4>
-              <p>
-                <a class='website-link unactive' href='#'>Website no longer active</a>
-              </p>
-              <p>Here is a description of the elections forecast.</p>
-            </div>
-            <div class='col-lg-3 col-md-3 col-sm-12'>
-              <div class='img-thumbnail portfolio-square template'></div>
-            </div>
-            <div class='col-lg-2 col-md-2 col-sm-12'>
-              <h4>Article Templates</h4>
-              <p>
-                <a class='website-link' href='http://www.flashband.org'>www.flashband.org</a>
-              </p>
-              <p>Here is a description of the elections forecast.</p>
-              <p>
-                <a href='#'>View it on Github!</a>
-              </p>
-            </div>
-            <div class='col-lg-3 col-md-3 col-sm-12'>
-              <div class='img-thumbnail portfolio-square this'></div>
-            </div>
-            <div class='col-lg-2 col-md-2 col-sm-12'>
-              <h4>This Website</h4>
-              <p>
-                <a class='website-link' href='http://www.flashband.org'>www.flashband.org</a>
-              </p>
-              <p>Here is a description of the elections forecast.</p>
-              <p>
-                <a href='#'>View it on Github!</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class='container-fluid art-section' data-speed='1' data-type='background' id='art'>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-lg-12 col-md-12 col-sm-12'>
-              <h2>design</h2>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col-lg-3 col-md-3 col-sm-12'>
-              <div class='img-thumbnail portfolio-square flashband'></div>
-            </div>
-            <div class='col-lg-2 col-md-2 col-sm-12'>
-              <h4>Flashband</h4>
-              <p>
-                <a class='website-link' href='http://www.flashband.org'>Flashband Website</a>
-              </p>
-              <p>Here is a description of Flashband.</p>
-              <p>
-                <a href='#'>View it on Github!</a>
-              </p>
-            </div>
-            <div class='col-lg-3 col-md-3 col-sm-12'>
-              <a class='img-thumbnail portfolio-square elections' href='/elections.haml'></a>
-            </div>
-            <div class='col-lg-2 col-md-2 col-sm-12'>
-              <h4>Elections Forecast</h4>
-              <p>
-                <a class='website-link' href='http://www.usatoday.com/pages/interactives/elections-forecast-2014/'>Elections App</a>
-              </p>
-              <p>Here is a description of the elections forecast.</p>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col-lg-3 col-md-3 col-sm-12'>
-              <div class='img-thumbnail portfolio-square ghost'></div>
-            </div>
-            <div class='col-lg-2 col-md-2 col-sm-12'>
-              <h4>Ghost Factories</h4>
-              <p>
-                <a class='website-link' href='http://usatoday30.usatoday.com/news/nation/smelting-lead-contamination'>Ghost Factories App</a>
-              </p>
-              <p>Here is a description of the elections forecast.</p>
-            </div>
-            <div class='col-lg-3 col-md-3 col-sm-12'>
-              <div class='img-thumbnail portfolio-square ccc'></div>
-            </div>
-            <div class='col-lg-2 col-md-2 col-sm-12'>
-              <h4>College and Career Connections</h4>
-              <p>
-                <a class='website-link unactive' href='#'>Website no longer active</a>
-              </p>
-              <p>Here is a description of the elections forecast.</p>
-            </div>
-            <div class='col-lg-3 col-md-3 col-sm-12'>
-              <div class='img-thumbnail portfolio-square template'></div>
-            </div>
-            <div class='col-lg-2 col-md-2 col-sm-12'>
-              <h4>Article Templates</h4>
-              <p>
-                <a class='website-link' href='http://www.flashband.org'>www.flashband.org</a>
-              </p>
-              <p>Here is a description of the elections forecast.</p>
-              <p>
-                <a href='#'>View it on Github!</a>
-              </p>
-            </div>
-            <div class='col-lg-3 col-md-3 col-sm-12'>
-              <div class='img-thumbnail portfolio-square this'></div>
-            </div>
-            <div class='col-lg-2 col-md-2 col-sm-12'>
-              <h4>This Website</h4>
-              <p>
-                <a class='website-link' href='http://www.flashband.org'>www.flashband.org</a>
-              </p>
-              <p>Here is a description of the elections forecast.</p>
-              <p>
-                <a href='#'>View it on Github!</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class='container-fluid resume-section' data-speed='2' data-type='background' id='resume'>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-lg-12 col-md-12 col-sm-12'>
-              <h2>resume</h2>
-              <h5>download a pdf version <a href="">here</a>.</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col-lg-4 col-md-4 col-sm-12'>
-              <h4>education</h4>
-              <h5>Center for Digital Imaging Arts at Boston University</h5>
-              <p>Certification in Graphic/Web Design</p>
-              <p>Graduated May, 2009</p>
-              <h5>Syracuse University S.I. Newhouse School of Public Communications</h5>
-              <p>Dual B.A. in Advertising and Sociology</p>
-              <p>Summa Cum Laude</p>
-              <p>Graduated May, 2007</p>
-              <h4>skills</h4>
-              <h5>Proficient:</h5>
-              <p>HTML / CSS (including HTML5 / CSS3)</p>
-              <p>JavaScript</p>
-              <p>Adobe InDesign</p>
-              <p>Adobe Dreamweaver</p>
-              <p>Adobe Photoshop</p>
-              <p>Adobe Illustrator</p>
-              <p>Wordpress</p>
-              <h5>Working Knowledge:</h5>
-              <p>Python</p>
-              <p>Django</p>
-              <p>Groovy on Grails</p>
-              <p>Adobe Flash</p>
-              <p>ActionScript</p>
-              <h4>honors</h4>
-            </div>
-            <div class='col-lg-7 col-md-7 col-sm-12'>
-              <h4>experience</h4>
-              <h5>USA Today, McLean VA</h5>
-              <p>Web Developer - August 2011 - present</p>
-              <ul>
-                <li>Collaborated with the entire USA Today development team to completely re-launch the USA Today relaunch.</li>
-                <li>Work with lead developers to integrate front end style with back end functionality.</li>
-              </ul>
-              <h5>The Flashband Project, Arlington VA</h5>
-              <p>Cofounder / Lead Front End Designer/Developer - June 2012 - present</p>
-              <ul>
-                <li>Create entire layout and organization of site from wireframes to execution.</li>
-                <li>Work with lead developer to integrate front end style with back end functionality.</li>
-                <li>Maintain site operation and appearance across several browsers.</li>
-              </ul>
-              <h5>American Institutes for Research, Washington DC</h5>
-              <p>Assistant Web Designer - February 2009 - August 2011</p>
-              <ul>
-                <li>Manage design and code changes to various websites and online applications.</li>
-                <li>Design the structure and appearance for new online tools for teachers and students.</li>
-                <li>Illustrate covers for User Guides and AIR internal pamphlets.</li>
-              </ul>
-              <h5>Center for Digital Imaging Arts at Boston University, Washington DC</h5>
-              <p>Web Design Teaching Assistant - June 2009 - December, 2009</p>
-              <ul>
-                <li>Advise and mentor students as they prepare to enter the job market.</li>
-                <li>Critique student work and answer questions.</li>
-                <li>Teach classes on Photoshop.</li>
-              </ul>
-              <h5>Brunner Digital, Washington DC</h5>
-              <p>Web Design Intern - May 2009 - December 2009</p>
-              <ul>
-                <li>Designed websites and facebook fan pages for clients.</li>
-                <li>Assisted in production of print ads and brochure layouts.</li>
-                <li>Developed and executed alternate reality game to promote a local concert.</li>
-              </ul>
-              <h5>Rydex Investments, Rockville MD</h5>
-              <p>Sales Coordinator – February 2008 – September 2008</p>
-              <ul>
-                <li>Provided administrative support to sales team.</li>
-                <li>Created marketing materials.</li>
-                <li>Organized and supervised events within the company.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </body>
-  <script src='js/lib/jquery.min.js'></script>
-  <script src='js/lib/bootstrap.js'></script>
-  <script src='js/main.js'></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="ACME Inc.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Vendor: Bootstrap Stylesheets http://getbootstrap.com -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Our Website CSS Styles -->
+ 
+    <link rel="stylesheet" href="css/outlook-style.css">
+
+</head>
+<body ng-app="amandaPortfolio">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<div ng-view></div>
+
+<!-- Vendor: Javascripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<!-- Vendor: Angular, followed by our custom Javascripts -->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+
+<!-- Our Website Javascripts -->
+<script src="js/main.js"></script>
+
+</body>
 </html>
