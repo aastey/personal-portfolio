@@ -25,18 +25,18 @@
             <span class='icon-bar'></span>
           </button>
           <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
-            <ul class='nav navbar-nav'>
-              <li>
-                <a class='nav-link first active' href='#/'>about</a>
+             <ul class='nav navbar-nav'>
+              <li> 
+                <a class='nav-link first' href='#/'>about</a>
               </li>
               <li>
-                <a class='nav-link' href='/#develop'>develop</a>
+                <a ng-class="{active:isActive('/develop/')}" class='nav-link' href='/#develop'>develop</a>
               </li>
               <li>
-                <a class='nav-link' href='/#design'>design</a>
+                <a ng-class="{active:isActive('/design/')}" class='nav-link' href='/#design'>design/art</a>
               </li>
               <li>
-                <a class='nav-link' href='/#resume'>resume</a>
+                <a  class='nav-link' href='/#resume'>resume</a>
               </li>
             </ul>
           </div>
