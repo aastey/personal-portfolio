@@ -63,6 +63,8 @@ app.controller('DesignSubPage', function($scope,$routeParams, $http) {
       //all of the pieces needed for the template
        $scope.title= $scope.posts.name
        $scope.description = $scope.posts.longDescription;
+       $scope.descriptionTwo = $scope.posts.longDescriptionTwo;
+       $scope.descriptionThree = $scope.posts.longDescriptionThree;
        $scope.imageOne = $scope.posts.imageOne;
        $scope.imageTwo = $scope.posts.imageTwo;
        $scope.imageThree = $scope.posts.imageThree;
@@ -86,6 +88,8 @@ app.controller('DevelopSubPage', function($scope,$routeParams, $http) {
       //all of the pieces needed for the template
        $scope.title= $scope.posts.name
        $scope.description = $scope.posts.longDescription;
+       $scope.descriptionTwo = $scope.posts.longDescriptionTwo;
+       $scope.descriptionThree = $scope.posts.longDescriptionThree;
        $scope.imageOne = $scope.posts.imageOne;
        $scope.imageTwo = $scope.posts.imageTwo;
        $scope.imageThree = $scope.posts.imageThree;

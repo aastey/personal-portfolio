@@ -33,7 +33,7 @@ a {
 
 .carousel h3 {
   float: left;
-  color: #787878;
+  color: #bebebe;
   position: absolute;
   bottom: 55px;
   font-family: steel;
@@ -44,7 +44,7 @@ a {
 .carousel .carousel-item {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px; }
+  height: 300px; }
 .carousel .carousel-indicators {
   position: absolute;
   bottom: 10px;
@@ -189,19 +189,14 @@ a {
       font-weight: bold; }
 
 .about-section {
-  background-color: #b6483c;
   min-height: 300px;
   padding-top: 30px;
   padding-bottom: 100px; }
   .about-section h2 {
-    color: white;
     padding-bottom: 10px; }
-  .about-section p {
-    color: white; }
   .about-section ul {
     padding-left: 17px; }
     .about-section ul li {
-      color: white;
       margin-bottom: 10px; }
   .about-section .white-tilted-container {
     width: 90%;
@@ -221,13 +216,8 @@ a {
       color: black; }
     .about-section .white-tilted-container p {
       color: black; }
-  .about-section .amanda-image {
-    background-image: url("../img/amanda-image.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 20px;
-    min-height: 240px;
-    width: 90%; }
+  .about-section .amanda-pic {
+    width: 100%; }
 
 .art-section,
 .develop-section {
@@ -282,6 +272,9 @@ a {
       border-bottom: 1px solid white;
       width: 100%;
       background-color: #b6483c; }
+  .art-section .portfolio-square,
+  .develop-section .portfolio-square {
+    margin: 40px 0 0 0; }
   .art-section a.website-link,
   .develop-section a.website-link {
     color: #b6483c;
@@ -447,6 +440,8 @@ a {
       -webkit-transform: rotate(-4deg);
       /* Chrome, Safari, Opera */
       transform: rotate(-4deg); }
+    .about-section .amanda-pic {
+      display: none; }
 
   .work-section {
     padding-top: 40px;

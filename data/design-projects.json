@@ -1,62 +1,58 @@
 {
-    "flashband":
+    "a_flashbanddesign":
     {
-        "name" : "Flashband",
-        "slug" : "flashband",
-        "websitename" : "male",
-	    "url" : "male",
-	    "github" : "male",
-	    "thumb" : "male",
-        "shortDescription" : "flashband is awesome",
-        "longDescription" : "flashband is awesome",
-	    "tools" : "groovy on grails",
-	    "imageOne" : "male",
-	    "imageTwo" : "male",
-	    "imageThree" : "male"
+        "name" : "Flashband Fliers",
+        "slug" : "a_flashbanddesign",
+        "thumb" : "/img/thumb_flashbanddesign.jpg",
+        "shortDescription" : "Flashband is a musician connecting organization based in Washington DC. We organize events that help musicians meet, network and play music.",
+        "longDescription" : "Flashband is an organization that helps musicians meet, network and play music. In addition to being a co-founder of the project, I am also its lead designer and front-end developer.",
+        "longDescriptionTwo" :"Since its inception in 2012, Flashband has grown from a few friends using google docs to organize jam sessions to a fully fledged social-media platform. The website helps musicians find and communicate with others in addition to helping them participate in our popular Showcases throughout the city.",
+        "longDescriptionThree" :"Since its inception in 2012, Flashband has grown from a few friends using google docs to organize jam sessions to a fully fledged social-media platform. The website helps musicians find and communicate with others in addition to helping them participate in our popular Showcases throughout the city.",
+        "tools" : "groovy on grails",
+        "imageOne" : "male",
+        "imageTwo" : "male",
+        "imageThree" : "male"
     },
-    "elections":
+    "b_illustration":
     {
-        "name" : "Flashband",
-        "slug" : "flashband",
-        "websitename" : "male",
-	    "url" : "male",
-	    "github" : "male",
-	    "thumb" : "male",
-        "shortDescription" : "flashband is awesome",
-        "longDescription" : "flashband is awesome",
-	    "tools" : "groovy on grails",
-	    "imageOne" : "male",
-	    "imageTwo" : "male",
-	    "imageThree" : "male"
+        "name" : "Assorted Illustrations",
+        "slug" : "b_illustration",
+        "thumb" : "/img/thumb_illustration.jpg",
+        "shortDescription" : "Flashband is a musician connecting organization based in Washington DC. We organize events that help musicians meet, network and play music.",
+        "longDescription" : "Flashband is an organization that helps musicians meet, network and play music. In addition to being a co-founder of the project, I am also its lead designer and front-end developer.",
+        "longDescriptionTwo" :"Since its inception in 2012, Flashband has grown from a few friends using google docs to organize jam sessions to a fully fledged social-media platform. The website helps musicians find and communicate with others in addition to helping them participate in our popular Showcases throughout the city.",
+        "longDescriptionThree" :"Since its inception in 2012, Flashband has grown from a few friends using google docs to organize jam sessions to a fully fledged social-media platform. The website helps musicians find and communicate with others in addition to helping them participate in our popular Showcases throughout the city.",
+        "tools" : "groovy on grails",
+        "imageOne" : "male",
+        "imageTwo" : "male",
+        "imageThree" : "male"
     },
-    "test":
+    "c_gallery":
     {
-        "name" : "Flashband",
-        "slug" : "flashband",
-        "websitename" : "male",
-	    "url" : "male",
-	    "github" : "male",
-	    "thumb" : "male",
-        "shortDescription" : "flashband is awesome",
-        "longDescription" : "flashband is awesome",
-	    "tools" : "groovy on grails",
-	    "imageOne" : "male",
-	    "imageTwo" : "male",
-	    "imageThree" : "male"
+        "name" : "National Gallery of Art Flier (concept)",
+        "slug" : "c_gallery",
+        "thumb" : "/img/thumb_nga.jpg",
+        "shortDescription" : "Flashband is a musician connecting organization based in Washington DC. We organize events that help musicians meet, network and play music.",
+        "longDescription" : "Flashband is an organization that helps musicians meet, network and play music. In addition to being a co-founder of the project, I am also its lead designer and front-end developer.",
+        "longDescriptionTwo" :"Since its inception in 2012, Flashband has grown from a few friends using google docs to organize jam sessions to a fully fledged social-media platform. The website helps musicians find and communicate with others in addition to helping them participate in our popular Showcases throughout the city.",
+        "longDescriptionThree" :"Since its inception in 2012, Flashband has grown from a few friends using google docs to organize jam sessions to a fully fledged social-media platform. The website helps musicians find and communicate with others in addition to helping them participate in our popular Showcases throughout the city.",
+        "tools" : "groovy on grails",
+        "imageOne" : "male",
+        "imageTwo" : "male",
+        "imageThree" : "male"
     },
-    "test":
+    "d_elections":
     {
-        "name" : "Flashband",
-        "slug" : "flashband",
-        "websitename" : "male",
-	    "url" : "male",
-	    "github" : "male",
-	    "thumb" : "male",
-        "shortDescription" : "flashband is awesome",
-        "longDescription" : "flashband is awesome",
-	    "tools" : "groovy on grails",
-	    "imageOne" : "male",
-	    "imageTwo" : "male",
-	    "imageThree" : "male"
+        "name" : "Flashband Fliers",
+        "slug" : "flashbanddesign",
+        "thumb" : "/img/thumb_flashbanddesign.jpg",
+        "shortDescription" : "Flashband is a musician connecting organization based in Washington DC. We organize events that help musicians meet, network and play music.",
+        "longDescription" : "Flashband is an organization that helps musicians meet, network and play music. In addition to being a co-founder of the project, I am also its lead designer and front-end developer.",
+        "longDescriptionTwo" :"Since its inception in 2012, Flashband has grown from a few friends using google docs to organize jam sessions to a fully fledged social-media platform. The website helps musicians find and communicate with others in addition to helping them participate in our popular Showcases throughout the city.",
+        "longDescriptionThree" :"Since its inception in 2012, Flashband has grown from a few friends using google docs to organize jam sessions to a fully fledged social-media platform. The website helps musicians find and communicate with others in addition to helping them participate in our popular Showcases throughout the city.",
+        "tools" : "groovy on grails",
+        "imageOne" : "male",
+        "imageTwo" : "male",
+        "imageThree" : "male"
     }
 }
