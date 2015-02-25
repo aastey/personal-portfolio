@@ -1,17 +1,15 @@
-<div ng-include='"templates/header.html"'></div>
 <section class='container-fluid art-section' data-speed='1' data-type='background' id='art'>
-   <div class='container fade-in' ng-controller="DesignCtrl">
+   <div class='container' ng-controller="DesignCtrl">
      <div class='row' >
       <div class="col-lg-6 col-md-6 col-sm-12  portfolio-square" ng-repeat="post in posts">
           <div class="row">
             <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6'>
-                 <a href="/#/design/{{ post.slug }}">
-                    <img class="portfolio-thumb" src="{{ post.thumb }}" />
+                 <a class="portfolio-thumb" href="/#/design/{{ post.slug }}" style="background-image: url({{ post.thumb }});">
                   </a>
             </div>
             <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6'>
                 <h4> <a href="/#/design/{{ post.slug }}">{{ post.name }}</a></h4>
-                <p><a class='website-link' href='{{ post.url }} '>{{ post.websitename }} </a></p>
+                <p><a class='website-link' href='{{ post.url }}' target="_blank">{{ post.websitename }} </a></p>
                 <p>{{ post.shortDescription}} </p>
            </div>
           </div>

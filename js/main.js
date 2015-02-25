@@ -1,13 +1,13 @@
 
-var app = angular.module('amandaPortfolio', ['ngRoute']);
+var app = angular.module('amandaPortfolio', ['ngRoute', 'ngAnimate']);
 
 //Configure the Routes
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
-    .when("/develop", {templateUrl: "partials/develop.html", controller: "PageCtrl"})
-    .when("/design", {templateUrl: "partials/design.html", controller: "PageCtrl"})
-    .when("/resume", {templateUrl: "partials/resume.html", controller: "PageCtrl"})
+    .when("/develop", {templateUrl: "partials/develop.html", controller: "DevelopCtrl"})
+    .when("/design", {templateUrl: "partials/design.html", controller: "DesignCtrl"})
+    .when("/resume", {templateUrl: "partials/resume.html", controller: "ResumeCtrl"})
     .when("/develop/:page", {templateUrl: "partials/portfolio.html", controller: "DevelopSubPage"})
     .when("/design/:page", {templateUrl: "partials/portfolio.html", controller: "DesignSubPage"})
     .otherwise({redirectTo: '/'});
@@ -15,7 +15,8 @@ app.config(['$routeProvider', function ($routeProvider) {
 
 // Controls Main Pages
 app.controller('PageCtrl', function( $scope, $location, $http ) {
-
+  $(".nav-link").removeClass("active")
+  $(".nav-link.about").addClass("active")
   // Activates the Carousel
   $('.carousel').carousel({
     interval: 5000
@@ -26,13 +27,22 @@ app.controller('PageCtrl', function( $scope, $location, $http ) {
   });
 
    $scope.isActive = function(route) {
-        return route === $location.path();
+      return route === $location.path();
+
     }
 });
 
 
+// Controls Resume Page Template
+app.controller("ResumeCtrl", function($scope, $http) {
+  $(".nav-link").removeClass("active")
+  $(".nav-link.resume").addClass("active")
+});
+
 // Controls Design Page Template
 app.controller("DesignCtrl", function($scope, $http) {
+  $(".nav-link").removeClass("active")
+  $(".nav-link.design").addClass("active")
   $http.get('../data/design-projects.json').
     success(function(data, status, headers, config) {
       $scope.posts = data;
@@ -44,6 +54,8 @@ app.controller("DesignCtrl", function($scope, $http) {
 
 // Controls Develop Page Template
 app.controller("DevelopCtrl", function($scope, $http) {
+  $(".nav-link").removeClass("active")
+  $(".nav-link.develop").addClass("active")
   $http.get('../data/develop-projects.json').
     success(function(data, status, headers, config) {
       $scope.posts = data;
@@ -55,6 +67,8 @@ app.controller("DevelopCtrl", function($scope, $http) {
 
 // Controls Design Sub Page Template
 app.controller('DesignSubPage', function($scope,$routeParams, $http) {
+    $(".nav-link").removeClass("active")
+    $(".nav-link.design").addClass("active")
     $http.get('../data/design-projects.json').
     success(function(data, status, headers, config) {
       var pagename = $routeParams.page;
@@ -80,6 +94,8 @@ app.controller('DesignSubPage', function($scope,$routeParams, $http) {
 
 // Controls Develop Page Template
 app.controller('DevelopSubPage', function($scope,$routeParams, $http) {
+  $(".nav-link").removeClass("active")
+  $(".nav-link.develop").addClass("active")
     $http.get('../data/develop-projects.json').
     success(function(data, status, headers, config) {
       var pagename = $routeParams.page;
