@@ -1,11 +1,29 @@
 @media all and (max-width: 767px) {
-    .container.background-image {
+    .mobile-header {
+		display: block;
+		h1 {
+			color: rgb(200,200,200);
+			font-size: 148%;
+			text-align: center;
+		}
+		.social-icon-container {
+			text-align: center;
+			margin: 10px 0;
+		}
+	}
+	.desktop-header {
+		display: none;
+	}
+	.container.background-image {
         background-image: none;
         min-height: 250px;
         h1 {
         	margin-top: 10%;
         }
     }
+    .view-animate-container {
+		height: 2000px !important;
+	}
     .carousel {
     	.carousel-item {
     		height: 200px;
@@ -19,6 +37,7 @@
     				}
     			}
     		}
+    		
     	}
         h3{
 			display: none;
@@ -53,6 +72,25 @@
 		.amanda-pic{
 			display: none;
 		}
+		.bullet-points {
+			border:none;
+			text-align: left;
+			margin-bottom: 0;
+		    h2 {
+		    	margin-top: 0px;
+		    }
+		}
+		.big-picture {
+			border:none;
+			text-align: left;
+			margin-top: 0px;
+		    h2 {
+		    	margin-top: 0px;
+		    }
+		}
+		.about-squares {
+			display:none;
+		}
 	}
 	.work-section {
 		padding-top: 40px;
@@ -71,6 +109,9 @@
 			float: left;
 			padding: 25px 0 0 0;
 	    }
+	}
+	.navbar .navbar-inner {
+		width: 100%
 	}
 	.navbar {
 		.navbar-collapse {

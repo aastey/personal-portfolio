@@ -18,9 +18,7 @@ app.controller('PageCtrl', function( $scope, $location, $http ) {
   $(".nav-link").removeClass("active")
   $(".nav-link.about").addClass("active")
   // Activates the Carousel
-  $('.carousel').carousel({
-    interval: 5000
-  });
+  $('.carousel').carousel('pause');
    // Activates Tooltips for Social Links
   $('.tooltip-social').tooltip({
     selector: "a[data-toggle=tooltip]"
@@ -30,6 +28,7 @@ app.controller('PageCtrl', function( $scope, $location, $http ) {
       return route === $location.path();
 
     }
+
 });
 
 
@@ -75,13 +74,15 @@ app.controller('DesignSubPage', function($scope,$routeParams, $http) {
       $scope.posts = data[pagename];
       
       //all of the pieces needed for the template
-       $scope.title= $scope.posts.name
+       $scope.title= $scope.posts.name;
+       $scope.parent= $scope.posts.parent;
        $scope.description = $scope.posts.longDescription;
        $scope.descriptionTwo = $scope.posts.longDescriptionTwo;
        $scope.descriptionThree = $scope.posts.longDescriptionThree;
        $scope.imageOne = $scope.posts.imageOne;
        $scope.imageTwo = $scope.posts.imageTwo;
        $scope.imageThree = $scope.posts.imageThree;
+       $scope.imageFour = $scope.posts.imageFour;
        $scope.url = $scope.posts.url;
        $scope.github = $scope.posts.github;
        $scope.tools = $scope.posts.tools;
@@ -102,13 +103,15 @@ app.controller('DevelopSubPage', function($scope,$routeParams, $http) {
       $scope.posts = data[pagename];
       
       //all of the pieces needed for the template
-       $scope.title= $scope.posts.name
+       $scope.title= $scope.posts.name;
+       $scope.parent= $scope.posts.parent;
        $scope.description = $scope.posts.longDescription;
        $scope.descriptionTwo = $scope.posts.longDescriptionTwo;
        $scope.descriptionThree = $scope.posts.longDescriptionThree;
        $scope.imageOne = $scope.posts.imageOne;
        $scope.imageTwo = $scope.posts.imageTwo;
        $scope.imageThree = $scope.posts.imageThree;
+       $scope.imageFour = $scope.posts.imageFour;
        $scope.url = $scope.posts.url;
        $scope.github = $scope.posts.github;
        $scope.tools = $scope.posts.tools;
