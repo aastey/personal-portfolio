@@ -1,13 +1,30 @@
-<div ng-include='"templates/subheader.html"'></div>
-<div class="container row-fluid portfolio fade-in">
-  <div class="col-md-5 col-sm-12">
+<div class="container row-fluid portfolio ">
+  <div class="col-md-6 col-sm-12">
+    <a href="{{parent}}"><span class="glyphicon glyphicon-chevron-left"></span>Go Back</a>
     <h2>{{title}}</h2>
     <p ng-bind-html="my_html | to_trusted">{{description}}</p>
     <p ng-bind-html="my_html | to_trusted">{{descriptionTwo}}</p>
     <p ng-bind-html="my_html | to_trusted">{{descriptionThree}}</p>
-    <h3>Technical </h3>
   </div>
-  <div class="col-md-7 col-sm-12">
+  <div class="col-md-6 col-sm-12">
+    <div class="row">
+        <div class="col-md-6">
+          <a href="{{imageOne}}" data-toggle="lightbox" title="{{title}}" data-use-bootstrap-modal="false" data-gallery ><img class="portfolio-image" src="{{imageOne}}" /></a>
+        </div>
+        <div class="col-md-6">
+          <a href="{{imageTwo}}" data-toggle="lightbox" title="{{title}}" data-use-bootstrap-modal="false" data-gallery><img class="portfolio-image" src="{{imageTwo}}" /></a>
+        </div>
+        <div class="col-md-6">
+          <a href="{{imageThree}}" data-toggle="lightbox" title="{{title}}" data-use-bootstrap-modal="false" data-gallery><img class="portfolio-image" src="{{imageThree}}" /></a>
+        </div>
+        <div class="col-md-6">
+          <a href="{{imageFour}}" data-toggle="lightbox" title="{{title}}" data-use-bootstrap-modal="false" data-gallery><img class="portfolio-image" src="{{imageFour}}" /></a>
+        </div>
+    </div>
+    
   </div>
 
 </div>
+
+
+

@@ -12,24 +12,11 @@ a {
 .main-background {
   background-color: black; }
 
-.sub-header-background {
-  background-position: 0px -125px;
-  background-repeat: no-repeat;
-  height: 100px;
-  width: 1200px;
-  margin: 0 auto; }
-  .sub-header-background h1 {
-    text-transform: lowercase;
-    color: white;
-    font-size: 27px;
-    text-align: right;
-    width: 100%;
-    float: right; }
-  .sub-header-background .social-icon-container {
-    opacity: .6;
-    float: right; }
-    .sub-header-background .social-icon-container a {
-      margin-left: 5px; }
+.desktop-header {
+  display: block; }
+
+.mobile-header {
+  display: none; }
 
 .carousel h3 {
   float: left;
@@ -75,8 +62,6 @@ a {
   .carousel .carousel-indicators li.carousel-ind-3 {
     background-image: url("../img/carousel-dot3.png"); }
   .carousel .carousel-indicators li.carousel-ind-4 {
-    background-image: url("../img/carousel-dot4.png"); }
-  .carousel .carousel-indicators li.carousel-ind-5 {
     background-image: url("../img/carousel-dot5.png"); }
 .carousel .carousel-inner .item {
   -webkit-transition: 1s ease-in-out left;
@@ -119,8 +104,6 @@ a {
 .carousel .carousel-inner .item.background-3 {
   background-image: url("../img/main-background3.png"); }
 .carousel .carousel-inner .item.background-4 {
-  background-image: url("../img/main-background4.png"); }
-.carousel .carousel-inner .item.background-5 {
   background-image: url("../img/main-background5.png"); }
 
 .portfolio {
@@ -198,6 +181,26 @@ a {
     padding-left: 17px; }
     .about-section ul li {
       margin-bottom: 10px; }
+  .about-section .margin-top {
+    margin-top: 40px;
+    background-color: #b13e34;
+    color: white;
+    padding: 20px; }
+  .about-section .bullet-points {
+    border-left: 20px solid #b13e34;
+    padding: 10px 20px 5px 20px;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    text-align: left; }
+    .about-section .bullet-points h2 {
+      margin-top: -5px; }
+  .about-section .big-picture {
+    border-left: 20px solid #b13e34;
+    padding: 0 20px;
+    margin-top: 10px;
+    text-align: left; }
+    .about-section .big-picture h2 {
+      margin-top: -5px; }
   .about-section .white-tilted-container {
     width: 90%;
     float: left;
@@ -218,6 +221,39 @@ a {
       color: black; }
   .about-section .amanda-pic {
     width: 100%; }
+  .about-section .about-square {
+    height: 97px;
+    background-size: cover;
+    width: 48%;
+    margin: 1%;
+    float: left;
+    opacity: .8; }
+  .about-section .about-square-big {
+    height: 142px;
+    background-size: cover;
+    width: 48%;
+    margin: 1%;
+    float: left;
+    opacity: .8; }
+  .about-section .about-square:hover,
+  .about-section .about-square-big:hover {
+    opacity: 1; }
+  .about-section .square-me {
+    background-image: url("/img/square-me.png"); }
+  .about-section .square-cats {
+    background-image: url("/img/square-cats.png"); }
+  .about-section .square-rock {
+    background-image: url("/img/square-rock.png"); }
+  .about-section .square-caleb {
+    background-image: url("/img/square-caleb.png"); }
+  .about-section .square-flashband {
+    background-image: url("/img/square-flashband.png"); }
+  .about-section .square-syracuse {
+    background-image: url("/img/square-syracuse.png"); }
+  .about-section .square-cdia {
+    background-image: url("/img/square-cdia.png"); }
+  .about-section .square-usa {
+    background-image: url("/img/square-usa.png"); }
 
 .art-section,
 .develop-section {
@@ -239,10 +275,10 @@ a {
   .develop-section .portfolio-thumb {
     width: 100%;
     height: 200px;
+    background-size: cover;
     float: left;
     border: 4px solid #f3c1bc;
     z-index: 99;
-    background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 30px; }
   .art-section .portfolio-thumb:hover,
@@ -308,6 +344,56 @@ a {
     margin: 0;
     padding: 0; }
 
+.portfolio .portfolio-image {
+  width: 100%;
+  float: left;
+  margin: 20px 0;
+  border: 1px solid black; }
+
+/* modal edit */
+.borderless {
+  border: none; }
+
+.blueimp-gallery .modal-dialog {
+  max-width: 1400px; }
+
+.blueimp-gallery .modal-body {
+  padding: 0 0 63.25%; }
+
+.modal-header {
+  border: none; }
+
+/* angular js animations */
+.view-animate-container {
+  position: relative;
+  height: 1000px !important;
+  background: white;
+  overflow: hidden; }
+
+.view-animate {
+  padding: 10px; }
+
+.view-animate.ng-enter, .view-animate.ng-leave {
+  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px; }
+
+.view-animate.ng-enter {
+  top: 100%; }
+
+.view-animate.ng-enter.ng-enter-active {
+  top: 0; }
+
+.view-animate.ng-leave.ng-leave-active {
+  top: -100%; }
+
 @media all and (max-width: 1200px) {
   .carousel .carousel-inner .item p {
     text-align: left;
@@ -321,7 +407,7 @@ a {
       margin-right: 10px; }
 
   .navbar .navbar-inner {
-    width: 100%; }
+    width: 970px; }
 
   .about-section .amanda-image {
     display: none; }
@@ -402,11 +488,27 @@ a {
   to {
     opacity: 1; } }
 @media all and (max-width: 767px) {
+  .mobile-header {
+    display: block; }
+    .mobile-header h1 {
+      color: #c8c8c8;
+      font-size: 148%;
+      text-align: center; }
+    .mobile-header .social-icon-container {
+      text-align: center;
+      margin: 10px 0; }
+
+  .desktop-header {
+    display: none; }
+
   .container.background-image {
     background-image: none;
     min-height: 250px; }
     .container.background-image h1 {
       margin-top: 10%; }
+
+  .view-animate-container {
+    height: 2000px !important; }
 
   .carousel .carousel-item {
     height: 200px; }
@@ -442,6 +544,20 @@ a {
       transform: rotate(-4deg); }
     .about-section .amanda-pic {
       display: none; }
+    .about-section .bullet-points {
+      border: none;
+      text-align: left;
+      margin-bottom: 0; }
+      .about-section .bullet-points h2 {
+        margin-top: 0px; }
+    .about-section .big-picture {
+      border: none;
+      text-align: left;
+      margin-top: 0px; }
+      .about-section .big-picture h2 {
+        margin-top: 0px; }
+    .about-section .about-squares {
+      display: none; }
 
   .work-section {
     padding-top: 40px;
@@ -459,6 +575,9 @@ a {
       text-align: center;
       float: left;
       padding: 25px 0 0 0; }
+
+  .navbar .navbar-inner {
+    width: 100%; }
 
   .navbar .navbar-collapse {
     width: 100%;
