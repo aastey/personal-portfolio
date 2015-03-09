@@ -15,21 +15,14 @@ app.config(['$routeProvider', function ($routeProvider) {
 
 // Controls Main Pages
 app.controller('PageCtrl', function( $scope, $location, $http ) {
+  expandHeader();
+  
   $(".nav-link").removeClass("active")
   $(".nav-link.about").addClass("active")
-  // Activates the Carousel
-  $('.carousel').carousel('pause');
-   // Activates Tooltips for Social Links
-  $('.tooltip-social').tooltip({
-    selector: "a[data-toggle=tooltip]"
-  });
 
    $scope.isActive = function(route) {
       return route === $location.path();
-
     }
-
-  expandHeader();
 });
 
 
