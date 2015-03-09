@@ -29,6 +29,7 @@ app.controller('PageCtrl', function( $scope, $location, $http ) {
 
     }
 
+  expandHeader();
 });
 
 
@@ -36,6 +37,8 @@ app.controller('PageCtrl', function( $scope, $location, $http ) {
 app.controller("ResumeCtrl", function($scope, $http) {
   $(".nav-link").removeClass("active")
   $(".nav-link.resume").addClass("active")
+
+  expandHeader();
 });
 
 // Controls Design Page Template
@@ -48,6 +51,8 @@ app.controller("DesignCtrl", function($scope, $http) {
     }).
     error(function(data, status, headers, config) {
     });
+
+    expandHeader();
 });
 
 
@@ -61,6 +66,8 @@ app.controller("DevelopCtrl", function($scope, $http) {
     }).
     error(function(data, status, headers, config) {
     });
+
+    expandHeader();
 });
 
 
@@ -90,6 +97,9 @@ app.controller('DesignSubPage', function($scope,$routeParams, $http) {
     }).
     error(function(data, status, headers, config) {
     });
+
+    collapseHeader();
+
 });
 
 
@@ -119,7 +129,22 @@ app.controller('DevelopSubPage', function($scope,$routeParams, $http) {
     }).
     error(function(data, status, headers, config) {
     });
+
+    collapseHeader();
 });
+
+var collapseHeader = function(){
+    $( ".desktop-header" ).animate({
+     opacity: 0,
+     height: 0
+    }, 1000 );   
+}
+var expandHeader = function(){
+  $( ".desktop-header" ).animate({
+     opacity: 1,
+     height: 300
+    }, 1000 ); 
+}
 
 
 
