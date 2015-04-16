@@ -348,6 +348,12 @@ img[src=""] {
     padding: 0; }
   .resume-section .references {
     margin-top: 40px; }
+  .resume-section .resume-download {
+    color: #b6483c;
+    margin-top: 20px;
+    float: left;
+    margin-top: 20px;
+    font-size: 18px; }
 
 .portfolio .portfolio-image {
   width: 100%;
