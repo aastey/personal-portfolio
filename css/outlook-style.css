@@ -9,6 +9,9 @@ a {
   color: #6f9fc4;
   font-weight: bold; }
 
+img[src=""] {
+  display: none; }
+
 .main-background {
   background-color: black; }
 
@@ -343,6 +346,8 @@ a {
     color: black;
     margin: 0;
     padding: 0; }
+  .resume-section .references {
+    margin-top: 40px; }
 
 .portfolio .portfolio-image {
   width: 100%;
