@@ -31,7 +31,7 @@ app.controller("ResumeCtrl", function($scope, $http) {
   $(".nav-link").removeClass("active")
   $(".nav-link.resume").addClass("active")
 
-  expandHeader();
+  collapseHeader();
 });
 
 // Controls Design Page Template
