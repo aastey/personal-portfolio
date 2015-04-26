@@ -178,17 +178,32 @@ img[src=""] {
   min-height: 300px;
   padding-top: 30px;
   padding-bottom: 100px; }
-  .about-section h2 {
-    padding-bottom: 10px; }
+  .about-section h3 {
+    padding-bottom: 10px;
+    color: #6f9fc4;
+    font-weight: bold;
+    margin: 0 0 10px 0; }
   .about-section ul {
     padding-left: 17px; }
     .about-section ul li {
       margin-bottom: 10px; }
+  .about-section .about-image {
+    width: 100%;
+    opacity: .7;
+    border: 1px solid #6f9fc4; }
+  .about-section .photo-container {
+    margin: 15px 0; }
+    .about-section .photo-container div {
+      padding: 0 10px 0 0; }
+  .about-section .about-image:hover {
+    opacity: 1; }
   .about-section .margin-top {
     margin-top: 40px;
     background-color: #b13e34;
     color: white;
     padding: 20px; }
+  .about-section .my-details {
+    margin-top: 30px; }
   .about-section .bullet-points {
     padding: 10px 20px 5px 20px;
     margin-top: 2px;
@@ -278,10 +293,11 @@ img[src=""] {
     height: 200px;
     background-size: cover;
     float: left;
-    border: 4px solid #f3c1bc;
+    border: 1px solid #f3c1bc;
     z-index: 99;
     background-repeat: no-repeat;
-    margin-bottom: 30px; }
+    margin-bottom: 10px;
+    margin-top: 12px; }
   .art-section .portfolio-thumb:hover,
   .develop-section .portfolio-thumb:hover {
     -webkit-transform: scale(1.1);
@@ -403,213 +419,112 @@ img[src=""] {
 .view-animate.ng-leave.ng-leave-active {
   top: -100%; }
 
-@media all and (max-width: 1200px) {
-  .carousel .carousel-inner .item p {
-    text-align: left;
-    width: 60%; }
+/* Twitter styles */
+#loading-container {
+  padding: 16px 0px 16px 0px;
+  text-align: center; }
 
-  .sub-header-background {
-    width: 100%; }
-    .sub-header-background h1 {
-      margin: 20px 10px 10px 10px; }
-    .sub-header-background .social-icon-container {
-      margin-right: 10px; }
+#twitter-feed {
+  width: 100%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0px;
+  padding: 0 15px 0 0;
+  border-radius: 12px;
+  background-color: #FFF;
+  color: #333;
+  overflow: auto; }
 
-  .navbar .navbar-inner {
-    width: 970px; }
+.twitter-text p.twitter-status {
+  margin: 6px 0 10px 0; }
 
-  .about-section .amanda-image {
-    display: none; }
-  .about-section .white-tilted-container {
-    margin-top: 40px;
-    -ms-transform: rotate(-4deg);
-    /* IE 9 */
-    -webkit-transform: rotate(-4deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(-4deg); } }
-/* FADE */
-.fade-in {
-  animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  /* Firefox */
-  -webkit-animation: fadein 2s;
-  /* Safari and Chrome */
-  -o-animation: fadein 2s;
-  /* Opera */ }
+.twitter-article, #loading-container {
+  width: 100%;
+  float: left;
+  padding: 8px 0px 15px 0px;
+  position: relative; }
 
-@keyframes fadein {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-moz-keyframes fadein {
-  /* Firefox */
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-webkit-keyframes fadein {
-  /* Safari and Chrome */
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-o-keyframes fadein {
-  /* Opera */
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-/* slow fade */
-.fade-in-slow {
-  animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  /* Firefox */
-  -webkit-animation: fadein 2s;
-  /* Safari and Chrome */
-  -o-animation: fadein 2s;
-  /* Opera */
-  -webkit-animation-delay: 1s;
-  /* Chrome, Safari, Opera */
-  animation-delay: 1s; }
+/* -------- TEXT STYLING ------*/
+.twitter-text {
+  width: 100%;
+  float: left;
+  font-size: 14px;
+  padding-left: 0px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
-@keyframes fadein {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-moz-keyframes fadein {
-  /* Firefox */
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-webkit-keyframes fadein {
-  /* Safari and Chrome */
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@-o-keyframes fadein {
-  /* Opera */
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-@media all and (max-width: 767px) {
-  .mobile-header {
-    display: block; }
-    .mobile-header h1 {
-      color: #c8c8c8;
-      font-size: 148%;
-      text-align: center; }
-    .mobile-header .social-icon-container {
-      text-align: center;
-      margin: 10px 0; }
+.twitter-text p {
+  margin: 0px;
+  line-height: 17px; }
 
-  .desktop-header {
-    display: none; }
+.twitter-text a, h1 a {
+  color: #6f9fc4;
+  text-decoration: none; }
 
-  .container.background-image {
-    background-image: none;
-    min-height: 250px; }
-    .container.background-image h1 {
-      margin-top: 10%; }
+.twitter-text a:hover, h1 a:hover {
+  text-decoration: underline;
+  color: #6f9fc4; }
 
-  .view-animate-container {
-    height: 2000px !important; }
+.tweet-time {
+  font-size: 10px;
+  color: #878787;
+  float: right; }
 
-  .carousel .carousel-item {
-    height: 200px; }
-  .carousel .carousel-inner .item .carousel-caption {
-    margin-bottom: 0; }
-    .carousel .carousel-inner .item .carousel-caption h1 {
-      font-size: 30px; }
-  .carousel h3 {
-    display: none; }
-  .carousel .carousel-indicators {
-    display: none; }
+.tweet-time a, .tweet-time a:hover {
+  color: #878787; }
 
-  .sub-header-background {
-    width: 100%; }
-    .sub-header-background h1 {
-      font-size: 19px;
-      text-align: center;
-      margin: 20px 10px 10px 10px; }
-    .sub-header-background .social-icon-container {
-      width: 100%;
-      text-align: center; }
+.tweetprofilelink a,
+.tweetprofilelink a:hover {
+  color: #6f9fc4; }
 
-  .about-section {
-    padding-top: 0px; }
-    .about-section .amanda-image {
-      display: none; }
-    .about-section .white-tilted-container {
-      margin-top: 30px;
-      -ms-transform: rotate(-4deg);
-      /* IE 9 */
-      -webkit-transform: rotate(-4deg);
-      /* Chrome, Safari, Opera */
-      transform: rotate(-4deg); }
-    .about-section .amanda-pic {
-      display: none; }
-    .about-section .bullet-points {
-      border: none;
-      text-align: left;
-      margin-bottom: 0; }
-      .about-section .bullet-points h2 {
-        margin-top: 0px; }
-    .about-section .big-picture {
-      border: none;
-      text-align: left;
-      margin-top: 0px; }
-      .about-section .big-picture h2 {
-        margin-top: 0px; }
-    .about-section .about-squares {
-      display: none; }
+/* -------- FEED  ACTIONS ------*/
+#twitter-actions {
+  width: 75px;
+  float: right;
+  margin-right: 5px;
+  margin-top: 3px;
+  display: none; }
 
-  .work-section {
-    padding-top: 40px;
-    padding-bottom: 20px; }
+.intent {
+  width: 25px;
+  height: 16px;
+  float: left; }
 
-  .resume-section {
-    padding-top: 40px; }
+.intent a {
+  width: 25px;
+  height: 16px;
+  display: block;
+  background-image: url(../img/tweet-actions.png);
+  float: left; }
 
-  .navbar.affix {
-    top: 80px; }
-    .navbar.affix:before {
-      font-size: 22px;
-      height: 60px;
-      width: 100%;
-      text-align: center;
-      float: left;
-      padding: 25px 0 0 0; }
+.intent a:hover {
+  background-position: -25px 0px; }
 
-  .navbar .navbar-inner {
-    width: 100%; }
+#intent-retweet a {
+  background-position: 0px -17px; }
 
-  .navbar .navbar-collapse {
-    width: 100%;
-    box-shadow: none;
-    border: none; }
-    .navbar .navbar-collapse .navbar-nav li .nav-link {
-      font-size: 20px;
-      margin-bottom: 10px;
-      text-align: center; }
-    .navbar .navbar-collapse .navbar-nav li a.first {
-      margin-left: 15px;
-      padding-left: 15px; }
+#intent-retweet a:hover {
+  background-position: -25px -17px; }
 
-  .scroll-top.affix {
-    background-color: black;
-    background-image: none;
-    height: 82px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100; } }
-@media all and (max-width: 450px) {
-  .container.background-image h1 {
-    margin-top: 16%; } }
+#intent-fave a {
+  background-position: 0px -36px; }
+
+#intent-fave a:hover {
+  background-position: -25px -36px; }
+
+/* -------- RETWEET INDICATOR ------*/
+#retweet-indicator {
+  width: 14px;
+  height: 10px;
+  background-image: url(../img/tweet-actions.png);
+  background-position: -5px -54px;
+  margin-top: 3px;
+  float: left; }
+
+/* Color Highlight for keyboard navigation */
+a.twitter-timeline:focus {
+  outline: none;
+  border-color: #0089cb; }
 
 /*# sourceMappingURL=outlook-style.css.map */

@@ -1,5 +1,5 @@
 
-var app = angular.module('amandaPortfolio', ['ngRoute', 'ngAnimate']);
+var app = angular.module('amandaPortfolio', ['ngRoute', 'ngAnimate', 'twitter.timeline']);
 
 //Configure the Routes
 app.config(['$routeProvider', function ($routeProvider) {
@@ -76,6 +76,8 @@ app.controller('DesignSubPage', function($scope,$routeParams, $http) {
       //all of the pieces needed for the template
        $scope.title= $scope.posts.name;
        $scope.parent= $scope.posts.parent;
+       $scope.url = $scope.posts.url;
+       $scope.website = $scope.posts.websitename;
        $scope.description = $scope.posts.longDescription;
        $scope.descriptionTwo = $scope.posts.longDescriptionTwo;
        $scope.descriptionThree = $scope.posts.longDescriptionThree;
@@ -108,6 +110,8 @@ app.controller('DevelopSubPage', function($scope,$routeParams, $http) {
       //all of the pieces needed for the template
        $scope.title= $scope.posts.name;
        $scope.parent= $scope.posts.parent;
+       $scope.url = $scope.posts.url;
+       $scope.website = $scope.posts.websitename;
        $scope.description = $scope.posts.longDescription;
        $scope.descriptionTwo = $scope.posts.longDescriptionTwo;
        $scope.descriptionThree = $scope.posts.longDescriptionThree;
@@ -138,6 +142,7 @@ var expandHeader = function(){
      height: 300
     }, 1000 ); 
 }
+
 
 
 
