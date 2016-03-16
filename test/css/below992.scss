@@ -1,0 +1,35 @@
+@media all and (max-width: 1200px) {
+	.carousel {
+		.carousel-inner {
+			.item {
+					p {
+						text-align: left;
+						width: 60%
+					}
+			}
+		}	
+	}
+	.sub-header-background {
+		width: 100%;
+		h1 {
+			margin: 20px 10px 10px 10px;
+		}
+		.social-icon-container {
+			margin-right: 10px;
+		}
+	}
+	.navbar .navbar-inner {
+		width: 100%
+	}
+	.about-section {
+		.amanda-image {
+			display: none;
+		}
+		.white-tilted-container {
+		    margin-top: 40px;
+		    -ms-transform: rotate(-4deg); /* IE 9 */
+	    	-webkit-transform: rotate(-4deg); /* Chrome, Safari, Opera */
+	    	transform: rotate(-4deg);
+		}
+	}
+} 

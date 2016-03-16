@@ -1,0 +1,469 @@
+@font-face
+{
+    font-family: optimus_font;
+    src: url('../fonts/OptimusPrincepsSemiBold.ttf');
+}
+
+@font-face
+{
+    font-family: vibes_font;
+    src: url('../fonts/GreatVibes-Regular.ttf');
+}
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: optimus_font;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -430px;
+    width: 860px;
+    height: 116px;
+    z-index: 1000;
+}
+
+#article-container{
+    width: 900px;
+    margin: 110px auto 0 auto;
+}
+
+.carousel-back {
+   background: #000 url(../images/background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+#page-scroll{
+    height: 11600px;
+    background-color: rgba(255,255,255,.9);
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    padding-bottom: 500px;
+}
+
+
+#about, 
+#wedding, 
+#proposal, 
+#travel, 
+#party,
+#registry, 
+#rsvp {
+    width: 860px;
+    height: 960px;
+    float: left;
+    margin-bottom: 300px;
+    padding: 15px 20px;
+}
+.head-container{
+    width: 431px;
+    height: 120px;
+    background-image: url('../images/header-back.png');
+    float: right;
+    margin-right: -92px;
+    margin-top: 60px;
+    z-index: 1000;
+}
+.webpage-title{
+    font-size: 36px;
+    color: white;
+    text-shadow: -2px 1px 1px rgb(0,0,0);
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 100%;
+}
+.page-container {
+    width: 860px;
+    float: left;
+    margin-top: 40px;
+}
+.paragraph-text{
+    font-family: helvetica, arial, sans-serif;
+    font-size: 13px;
+    margin-top: 15px;
+    width: 100%;
+    float: left;
+    line-height: 18px;
+}
+
+/* NAVIGATION */
+.navigation {
+    width: 880px; 
+    position: fixed; 
+    bottom: 0px;
+    left: 50%;
+    margin-left: -440px;
+    background-color: rgba(255,255,255,.9);
+    box-shadow: 5px -5px 12px rgb(255,255,255);
+    padding-top: 20px;
+}
+.nav-ul {
+    float: left;
+    width: 680px;
+}
+.nav-li {
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    font-size: 14px;
+}
+.nav-li a{
+    color: black;
+    text-decoration: none;
+    padding: 5px 17px;
+}
+.nav-li a.selected {
+    background-color:#008493;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: rgb(255,255,255);
+}
+.carousel-image {
+    margin-top: -60px;
+}
+
+/* SECTION HEADER */
+.section-header{
+    width: 845px;
+    float: left;
+    border-left: 10px solid #ba514b;
+    padding-left: 5px;
+}
+.section-head{
+    font-size: 23px;
+}
+.section-text {
+    font-size: 12px;
+    font-family: arial;
+    padding-left: 4px;
+}
+
+/* ROTATING IMAGES */
+.rotating-image-container{
+    width: 860px;
+    left: 0;
+    height: 150px;
+    z-index: 11;
+    float: left;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    z-index: 100;
+    margin-bottom: 20px;
+}
+.rotating-image-container img {
+    width: 860px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.rotating-item {
+    display: none;
+    position: absolute;
+}
+
+/* ##### WEDDING STYLES ###### */
+.about-wedding-top {
+    width: 100%;
+    float:left;
+    margin-bottom: 20px;
+}
+.about-summary {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.glenecho-wrap,
+.ceremony-wrap,
+.reception-wrap {
+    width: 31%;
+    float: left;
+    padding: 0 1%
+}
+.glenecho-wrap img,
+.ceremony-wrap img,
+.reception-wrap img{
+    width:100%;
+    margin-bottom: 4%;
+}
+
+.wedding-page-text {
+    width: 100%;
+}
+
+.page-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:15px;
+    float: left;
+    width: 100%;
+}
+
+.paragraph-text.wedding{
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 200px;
+}
+
+/* WEDDING PARTY */
+
+
+.wedding-party-picture{
+    background-image: url(../images/party_everyone.png);
+    width: 87px;
+    height: 133px;
+    border: 1px solid black;
+    float: left;
+    margin: 9px 9px 40px 9px;
+}
+.description-text{
+    position: relative;
+    background-color: rgb(0,0,0);
+    width: 102%;
+    margin-top: 109px;
+    color: white;
+    text-align: center;
+    margin-left: -1px;
+}
+.description-text h3{
+    font-size: 12px;
+}
+.description-text p{
+    font-family: helvetica, arial, sans-serif;
+    font-size: 12px;
+    padding-bottom: 2px;
+}
+.hidden-window{
+    display: none;
+}
+
+.left-party-window{
+    height: 350px;
+    width: 250px;
+    border: 1px solid black;
+    float: left;
+    margin-left: 34px;
+}
+.right-party-text{
+    width: 420px;
+    float: left;
+    margin-left: 20px;
+}
+.right-party-text h2 {
+    font-size: 22px;
+}
+.right-party-sub{
+    font-family: arial, helvetiva, sans-serif;
+    font-size: 12px;
+    padding: 5px 0px ;
+    width: 430px;
+    border-bottom: 1px solid black;
+}
+.bold {
+    font-family: arial, helvetiva, sans-serif;
+    font-size: 12px;
+    padding: 5px 0px ;
+    width: 430px;
+    font-weight: bold;
+}
+.bold-text {
+    font-family: arial, helvetiva, sans-serif;
+    font-weight: bold;
+}
+.window-gallery {
+    padding:10px 40px; 
+    background:#fff;
+    border: 1px solid rgb(190,190,190);
+    width: 768px;
+    height: 354px;
+    margin-left:40px;
+}
+a.inline,
+a.inline h3,
+a.inline p{
+    text-decoration: none;
+}
+.paragraph-text.party{
+    width: 430px;
+}
+.paragraph-text.usher{
+    width: 430px;
+    font-size: 11.5px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    line-height: 15px;
+}
+
+.wedding-party-picture.ashley {
+    background-position: -240px 160px;
+}
+.wedding-party-picture.kate {
+    background-position: 341px 0px;
+}
+.wedding-party-picture.greg {
+    background-position: 700px 0px;
+} 
+.wedding-party-picture.kt {
+    background-position: 220px 0px;
+}
+.wedding-party-picture.jared {
+    background-position: 121px 0px;
+}
+.wedding-party-picture.emily {
+    background-position: 581px 0px;
+} 
+.wedding-party-picture.sultana {
+    background-position: 0px 0px;
+}
+.wedding-party-picture.eric {
+    background-position: 359px 160px;
+}
+.wedding-party-picture.evan {
+    background-position: 580px 160px;
+} 
+.wedding-party-picture.mckenzie {
+    background-position: 820px 0px;
+} 
+.wedding-party-picture.jessica {
+    background-position: 460px 160px;
+} 
+.wedding-party-picture.cody {
+    background-position: -120px 160px;
+} 
+.wedding-party-picture.allison {
+    background-position: 0px 160px;
+}
+.wedding-party-picture.claire {
+    background-position: 460px 0px;
+}
+.wedding-party-picture.gwen {
+    background-position: 220px 160px;
+}
+.wedding-party-picture.usher {
+    background-position: 120px 160px;
+    margin-bottom: 200px;
+}
+.scroll-page-container {
+    width: 100%;
+    height: 80%;
+    overflow: auto;
+}
+
+/* ##### REGISTRY STYLES ###### */
+
+.registry-button{
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    text-decoration: none;
+    color: black;
+}
+.registry-button img{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+/* ##### ART SHOW STYLES ###### */
+
+.art-show {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    border-top: 1px solid black;
+    padding-top: 40px;
+}
+.art-image{
+    width: 250px;
+    float:left;
+    padding-right: 20px;
+}
+.art-text {
+    width: 550px;
+    float:left;
+}
+.art-title{
+    float:left;
+    font-weight: bold;
+}
+.bold {
+    font-weight: bold;
+}
+
+/* ##### TRAVEL STYLES ###### */
+
+#map-canvas {
+    height: 300px;
+    width:830px;
+    margin: 15px;
+    border: 1px solid black;
+    float: left;
+}
+.map-float {
+    float: left;
+    width: 420px;
+}
+
+.map-text a{
+    font-size: 15px;
+    float: left;
+}
+.map-header {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 26%;
+}
+.map-paragraph{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.map-text {
+    width: 820px;
+    float: left;
+    padding-left: 20px;
+}
+.map-page-title{
+    float: left;
+    text-align: left;   
+    font-weight: bold;
+    margin-top: 15px;
+    font-size:15px;
+    width: 100%;
+}
+.spacer{
+    float:left;
+    height: 15px;
+    width: 100%;
+}

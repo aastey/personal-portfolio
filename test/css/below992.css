@@ -1,0 +1,16 @@
+@media all and (max-width: 991px) {
+  .carousel .carousel-inner .item p {
+    text-align: left;
+    width: 60%; }
+
+  .about-section .amanda-image {
+    display: none; }
+  .about-section .white-tilted-container {
+    margin-top: 40px;
+    -ms-transform: rotate(-4deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-4deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-4deg); } }
+
+/*# sourceMappingURL=below992.css.map */

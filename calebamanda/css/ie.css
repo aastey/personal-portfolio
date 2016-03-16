@@ -1,0 +1,21 @@
+#page-scroll {
+    background:rgb(255,255,255);
+    background: transparent\9;
+    background:rgba(255,255,255,0.9);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#e5ffffff,endColorstr=#e5ffffff);
+    zoom: 1;
+}
+#page-scroll:nth-child(n) {
+    filter: none;
+}
+
+.navigation {
+    padding-top: 60px;
+}
+.nav-li a{
+    font-weight: bold;
+    background-color: #e4e2e0;
+}
+h1, h2{
+    text-transform: uppercase;
+}
