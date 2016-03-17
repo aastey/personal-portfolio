@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfe80f5c-6849-4258-8cd1-0412fe1e5caf" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/images/danash1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/images/danash2.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/carousel-dot3.png" afterPath="$PROJECT_DIR$/img/carousel-dot3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/main-background.png" afterPath="$PROJECT_DIR$/img/main-background.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/main-background2.png" afterPath="$PROJECT_DIR$/img/main-background2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/main-background3.png" afterPath="$PROJECT_DIR$/img/main-background3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/square-gracenote.png" afterPath="$PROJECT_DIR$/img/square-gracenote.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/develop-projects.json" afterPath="$PROJECT_DIR$/data/develop-projects.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/home.html" afterPath="$PROJECT_DIR$/partials/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header.html" afterPath="$PROJECT_DIR$/templates/header.html" />
     </list>
     <ignored path="personal-portfolio.iws" />
@@ -92,8 +83,8 @@
       <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3715084">
-              <caret line="31" column="174" selection-start-line="31" selection-start-column="174" selection-end-line="31" selection-end-column="174" />
+            <state vertical-scroll-proportion="0.622905">
+              <caret line="39" column="73" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -307,8 +298,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3715084">
-          <caret line="31" column="174" selection-start-line="31" selection-start-column="174" selection-end-line="31" selection-end-column="174" />
+        <state vertical-scroll-proportion="0.622905">
+          <caret line="39" column="73" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
           <folding />
         </state>
       </provider>
