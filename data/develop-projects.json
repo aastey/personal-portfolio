@@ -1,28 +1,47 @@
 {
-    "a_flashband":
+    "a_showcase":
+    {
+        "name" : "Showcase Demo",
+        "parent" : "/#/develop",
+        "slug" : "a_showcase",
+        "websitename" : "Showcase Website",
+	    "url" : "https://showcase.onthedemo.org/",
+	    "github" : "",
+	    "thumb" : "/img/thumb_showcase.jpg",
+        "shortDescription" : "The Showcase app demonstrates the various ways in which clients can interact with Gracenote's vast collection of tv, sports, celebrity, and movie metadata.",
+        "longDescription" : "Gracenote helps businesses connect to the music, TV shows, movies and sports they love across the world’s most popular entertainment platforms and devices. In August 2015 they brought me on to build this Showcase App from scratch. It was premiered at CES 2016 and will continue to be updated throughout the year.",
+        "longDescriptionTwo" :"The site demonstrates what can be done with the wealth of metadata Gracenote has to offer. It offers information on local TV stations, movies currently playing in theaters, and both past and future sports games. In addition, it offers a TV Grid, allowing users to browse what is playing on their local tv stations.",
+	    "longDescriptionThree" :"The Showcase App was built using Node and the React framework. It also uses moment.js for time and date management. The site is a constant work in progress and will soon offer information on music and athletes.",
+        "tools" : "groovy on grails",
+	    "imageOne" : "/img/showcase1.jpg",
+	    "imageTwo" : "/img/showcase2.jpg",
+	    "imageThree" : "/img/showcase3.jpg",
+        "imageFour" : "/img/showcase4.jpg"
+    },
+    "b_flashband":
     {
         "name" : "Flashband",
         "parent" : "/#/develop",
-        "slug" : "a_flashband",
+        "slug" : "b_flashband",
         "websitename" : "Flashband Website",
-	    "url" : "https://flashband.org/",
-	    "github" : "",
-	    "thumb" : "/img/thumb_flashband.jpg",
+        "url" : "https://flashband.org/",
+        "github" : "",
+        "thumb" : "/img/thumb_flashband.jpg",
         "shortDescription" : "The Flashband website helps musicians meet, network and play music with other people in their area.",
         "longDescription" : "Flashband is an organization that helps musicians meet, network and play music. In addition to being a co-founder of the project, I am also its lead designer and front-end developer.",
         "longDescriptionTwo" :"Since its inception in 2012, Flashband has grown from a few friends using google docs to organize jam sessions to a fully fledged social-media platform. The website helps musicians find and communicate with others in addition to helping them participate in our popular Showcases throughout the city.",
-	    "longDescriptionThree" :"The Flashband website is built using Grails, which combines established Java technologies into a modern, high-productivity framework . Within the last year we refactored the site to utilize Bootstrap in order to provide a mobile-first, responsive user experience.. The site also includes integration with Stripe, a credit-card payment system, Google location services for geocoding, as well as Amazon S3 for static content storage.",
+        "longDescriptionThree" :"The Flashband website is built using Grails, which combines established Java technologies into a modern, high-productivity framework . Within the last year we refactored the site to utilize Bootstrap in order to provide a mobile-first, responsive user experience.. The site also includes integration with Stripe, a credit-card payment system, Google location services for geocoding, as well as Amazon S3 for static content storage.",
         "tools" : "groovy on grails",
-	    "imageOne" : "/img/flashband1.jpg",
-	    "imageTwo" : "/img/flashband2.jpg",
-	    "imageThree" : "/img/flashband3.jpg",
+        "imageOne" : "/img/flashband1.jpg",
+        "imageTwo" : "/img/flashband2.jpg",
+        "imageThree" : "/img/flashband3.jpg",
         "imageFour" : "/img/flashband4.jpg"
     },
-    "b_map":
+    "c_map":
     {
         "name" : "Diversity Map",
         "parent" : "/#/develop",
-        "slug" : "b_map",
+        "slug" : "c_map",
         "websitename" : "Diversity Map",
         "url" : "http://www.gannett-cdn.com/GDContent/2014/diversity-map/index.html",
         "github" : "",
@@ -37,11 +56,11 @@
         "imageThree" : "/img/diversity3.jpg",
         "imageFour" : "/img/diversity4.jpg"
     },
-    "c_ghost":
+    "d_ghost":
     {
         "name" : "Ghost Factories",
         "parent" : "/#/develop",
-        "slug" : "c_ghost",
+        "slug" : "d_ghost",
         "websitename" : "The Ghost Factories Experience",
         "url" : "http://usatoday30.usatoday.com/news/nation/smelting-lead-contamination",
         "github" : "",
@@ -56,11 +75,11 @@
         "imageThree" : "/img/ghost3.jpg",
         "imageFour" : "/img/ghost4.jpg"
     },
-    "d_elections":
+    "e_elections":
     {
         "name" : "2014 Election Interactive",
         "parent" : "/#/develop",
-        "slug" : "d_elections",
+        "slug" : "e_elections",
         "websitename" : "USA Today 2014 Elections",
         "url" : "http://www.usatoday.com/pages/interactives/elections-forecast-2014/",
         "github" : "",
